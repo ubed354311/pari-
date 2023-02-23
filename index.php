@@ -1,585 +1,1476 @@
-<!doctype html>
-<html lang="id-ID" amp i-amphtml-binding i-amphtml-layout i-amphtml-no-boilerplate transformed="self;v=1" itemscope="itemscope" itemtype="https://schema.org/WebPage">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Situs Gacor Slot Online Resmi Terbaru Gampang Menang</title>
-<meta name="description" content="Slot gacor ialah situs daftar slot online resmi dan terpercaya hari ini serta memberikan rtp tinggi hanya dengan dana kecil anda bisa bermain game slot online gacor gampang menang" />
-<meta name="keywords" content="Slot, Slot Gacor, Slot Online, Slot Online Gacor, Slot Gacor Maxwin, Slot Gacor Terbaru, Situs Slot, Situs Slot Gacor, Judi Online" />
-<link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
-<link itemprop="mainEntityOfPage" rel="canonical" href="https://sipari.jogjaprov.go.id/uploads/berita/slot-gacor/" />
-<meta name="robots" content="index, follow" />
-<meta name="theme-color" content="#0a0a0a" />
-<meta content="true" name="HandheldFriendly">
-<meta content="width" name="MobileOptimized">
-<meta name="apple-mobile-web-app-status-bar-style" content="default"/>
-<meta name="apple-mobile-web-app-capable" content="yes"/>
-<meta name="mobile-web-app-capable" content="yes"/>
-<meta name="language" content="ID">
-<meta name="copyright" content="Slot Gacor">
-<meta name="author" content="Slot Gacor">
-<meta name="distribution" content="global">
-<meta name="publisher" content="Slot Gacor">
-<meta name="geo.placename" content="Jakarta Timur">
-<meta name="geo.country" content="ID">
-<meta name="geo.region" content="ID" />
-<meta name="tgn.nation" content="Indonesia">
+<?php
+require("config/config.default.php");
+require("config/config.function.php");
+require("config/functions.crud.php");
+require("config/config.candy.php");
+(isset($_SESSION['id_siswa'])) ? $id_siswa = $_SESSION['id_siswa'] : $id_siswa = 0;
+($id_siswa == 0) ?  header("Location:$homeurl/login.php") : null;
+($pg == 'testongoing') ? $sidebar = 'sidebar-collapse' : $sidebar = '';
+($pg == 'testongoing') ? $disa = '' : $disa = 'offcanvas';
+$siswa = mysqli_fetch_array(mysqli_query($koneksi, "SELECT * FROM siswa WHERE id_siswa='$id_siswa'"));
+$idsesi = $siswa['sesi'];
+$idpk = $siswa['idpk'];
+$level = $siswa['level'];
+$pk = fetch($koneksi, 'pk', array('id_pk' => $idpk));
+$tglsekarang = time();
 
-<!-- OG:FACEBOOK -->
-<meta property="og:locale" content="id_ID" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Situs Gacor Slot Online Resmi Terbaru Gampang Menang" />
-<meta property="og:description" content="Slot gacor ialah situs daftar slot online resmi dan terpercaya hari ini serta memberikan rtp tinggi hanya dengan dana kecil anda bisa bermain game slot online gacor gampang menang." />
-<meta property="og:url" content="https://sipari.jogjaprov.go.id/uploads/berita/slot-gacor/" />
-<meta property="og:site_name" content="Slot Gacor" />
-<meta property="article:modified_time" content="2023-01-24T11:24:48+00:00" />
-<meta property="og:image" content="https://i.ibb.co/M94GDSR/Slot-Gacor-sqr.png" />
-<meta property="og:image:width" content="325" />
-<meta property="og:image:height" content="234" />
-<meta property="og:image:type" content="image/jpg" />
-<!-- OG:TWITTER -->
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Situs Gacor Slot Online Resmi Terbaru Gampang Menang" />
-<meta name="twitter:description" content="Slot gacor ialah situs daftar slot online resmi dan terpercaya hari ini serta memberikan rtp tinggi hanya dengan dana kecil anda bisa bermain game slot online gacor gampang menang." />
-<meta name="twitter:image" content="https://i.ibb.co/M94GDSR/Slot-Gacor-sqr.png" />
-<meta name="twitter:site" content="@Slot_Gacor" />
-<meta name="twitter:label1" content="Estimasi waktu membaca" />
-<meta name="twitter:data1" content="10 menit" />
-<link rel="preload" as="image" href="https://layananonline.disdukcapil.subulussalamkota.go.id/Slot-Gacor-Logo.png" />
-<link rel="preload" as="image" href="https://layananonline.disdukcapil.subulussalamkota.go.id/image/banner-slot-gacor.jpg" />
-<link rel="preload" as="image" href="https://i.ibb.co/LZMgQwb/bonusmerah.webp" />
-<link rel="preload" as="image" href="https://i.ibb.co/QQ1d0sw/daftar-menang.png" />
-<link rel="preload" as="image" href="https://i.ibb.co/8KkqT26/chat-langsung.png" />
-<meta name="supported-amp-formats" content="websites, stories, ads, email">
-<link href="https://www.svgrepo.com/show/423839/rabbit-origami-paper.svg" rel="shortcut icon" type="image/x-icon" />
-<link rel="apple-touch-icon-precomposed" href="https://www.svgrepo.com/show/423839/rabbit-origami-paper.svg" />
-<style amp-runtime i-amphtml-version="012107240354000">html.i-amphtml-fie{height:100%!important;width:100%!important}html:not([amp4ads]),html:not([amp4ads]) body{height:auto!important}html:not([amp4ads]) body{margin:0!important}body{-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%}html.i-amphtml-singledoc.i-amphtml-embedded{-ms-touch-action:pan-y pinch-zoom;touch-action:pan-y pinch-zoom}html.i-amphtml-fie>body,html.i-amphtml-singledoc>body{overflow:visible!important}html.i-amphtml-fie:not(.i-amphtml-inabox)>body,html.i-amphtml-singledoc:not(.i-amphtml-inabox)>body{position:relative!important}html.i-amphtml-ios-embed-legacy>body{overflow-x:hidden!important;overflow-y:auto!important;position:absolute!important}html.i-amphtml-ios-embed{overflow-y:auto!important;position:static}#i-amphtml-wrapper{overflow-x:hidden!important;overflow-y:auto!important;position:absolute!important;top:0!important;left:0!important;right:0!important;bottom:0!important;margin:0!important;display:block!important}html.i-amphtml-ios-embed.i-amphtml-ios-overscroll,html.i-amphtml-ios-embed.i-amphtml-ios-overscroll>#i-amphtml-wrapper{-webkit-overflow-scrolling:touch!important}#i-amphtml-wrapper>body{position:relative!important;border-top:1px solid transparent!important}#i-amphtml-wrapper+body{visibility:visible}#i-amphtml-wrapper+body .i-amphtml-lightbox-element,#i-amphtml-wrapper+body[i-amphtml-lightbox]{visibility:hidden}#i-amphtml-wrapper+body[i-amphtml-lightbox] .i-amphtml-lightbox-element{visibility:visible}#i-amphtml-wrapper.i-amphtml-scroll-disabled,.i-amphtml-scroll-disabled{overflow-x:hidden!important;overflow-y:hidden!important}amp-instagram{padding:54px 0 0!important;background-color:#fff}amp-iframe iframe{box-sizing:border-box!important}[amp-access][amp-access-hide]{display:none}[subscriptions-dialog],body:not(.i-amphtml-subs-ready) [subscriptions-action],body:not(.i-amphtml-subs-ready) [subscriptions-section]{display:none!important}amp-experiment,amp-live-list>[update]{display:none}amp-list[resizable-children]>.i-amphtml-loading-container.amp-hidden{display:none!important}amp-list [fetch-error],amp-list[load-more] [load-more-button],amp-list[load-more] [load-more-end],amp-list[load-more] [load-more-failed],amp-list[load-more] [load-more-loading]{display:none}amp-list[diffable] div[role=list]{display:block}amp-story-page,amp-story[stkamulone]{min-height:1px!important;display:block!important;height:100%!important;margin:0!important;padding:0!important;overflow:hidden!important;width:100%!important}amp-story[stkamulone]{background-color:#202125!important;position:relative!important}amp-story-page{background-color:#757575}amp-story .amp-active>div,amp-story .i-amphtml-loader-background{display:none!important}amp-story-page:not(:first-of-type):not([distance]):not([active]){transform:translateY(1000vh)!important}amp-autocomplete{position:relative!important;display:inline-block!important}amp-autocomplete>input,amp-autocomplete>textarea{padding:.5rem;border:1px solid rgba(0,0,0,.33)}.i-amphtml-autocomplete-results,amp-autocomplete>input,amp-autocomplete>textarea{font-size:1rem;line-height:1.5rem}[amp-fx^=fly-in]{visibility:hidden}amp-script[nodom],amp-script[sandboxed]{position:fixed!important;top:0!important;width:1px!important;height:1px!important;overflow:hidden!important;visibility:hidden}[hidden]{display:none!important}.i-amphtml-element{display:inline-block}.i-amphtml-blurry-placeholder{transition:opacity .3s cubic-bezier(0,0,.2,1)!important;pointer-events:none}[layout=nodisplay]:not(.i-amphtml-element){display:none!important}.i-amphtml-layout-fixed,[layout=fixed][width][height]:not(.i-amphtml-layout-fixed){display:inline-block;position:relative}.i-amphtml-layout-responsive,[layout=responsive][width][height]:not(.i-amphtml-layout-responsive),[width][height][heights]:not([layout]):not(.i-amphtml-layout-responsive),[width][height][sizes]:not(img):not([layout]):not(.i-amphtml-layout-responsive){display:block;position:relative}.i-amphtml-layout-intrinsic,[layout=intrinsic][width][height]:not(.i-amphtml-layout-intrinsic){display:inline-block;position:relative;max-width:100%}.i-amphtml-layout-intrinsic .i-amphtml-sizer{max-width:100%}.i-amphtml-intrinsic-sizer{max-width:100%;display:block!important}.i-amphtml-layout-container,.i-amphtml-layout-fixed-height,[layout=container],[layout=fixed-height][height]:not(.i-amphtml-layout-fixed-height){display:block;position:relative}.i-amphtml-layout-fill,.i-amphtml-layout-fill.i-amphtml-notbuilt,[layout=fill]:not(.i-amphtml-layout-fill),body noscript>*{display:block;overflow:hidden!important;position:absolute;top:0;left:0;bottom:0;right:0}body noscript>*{position:absolute!important;width:100%;height:100%;z-index:2}body noscript{display:inline!important}.i-amphtml-layout-flex-item,[layout=flex-item]:not(.i-amphtml-layout-flex-item){display:block;position:relative;-ms-flex:1 1 auto;flex:1 1 auto}.i-amphtml-layout-fluid{position:relative}.i-amphtml-layout-size-defined{overflow:hidden!important}.i-amphtml-layout-awaiting-size{position:absolute!important;top:auto!important;bottom:auto!important}i-amphtml-sizer{display:block!important}@supports (aspect-ratio:1/1){i-amphtml-sizer.i-amphtml-disable-ar{display:none!important}}.i-amphtml-blurry-placeholder,.i-amphtml-fill-content{display:block;height:0;max-height:100%;max-width:100%;min-height:100%;min-width:100%;width:0;margin:auto}.i-amphtml-layout-size-defined .i-amphtml-fill-content{position:absolute;top:0;left:0;bottom:0;right:0}.i-amphtml-replaced-content,.i-amphtml-screen-reader{padding:0!important;border:none!important}.i-amphtml-screen-reader{position:fixed!important;top:0!important;left:0!important;width:4px!important;height:4px!important;opacity:0!important;overflow:hidden!important;margin:0!important;display:block!important;visibility:visible!important}.i-amphtml-screen-reader~.i-amphtml-screen-reader{left:8px!important}.i-amphtml-screen-reader~.i-amphtml-screen-reader~.i-amphtml-screen-reader{left:12px!important}.i-amphtml-screen-reader~.i-amphtml-screen-reader~.i-amphtml-screen-reader~.i-amphtml-screen-reader{left:16px!important}.i-amphtml-unresolved{position:relative;overflow:hidden!important}.i-amphtml-select-disabled{-webkit-user-select:none!important;-ms-user-select:none!important;user-select:none!important}.i-amphtml-notbuilt,[layout]:not(.i-amphtml-element),[width][height][heights]:not([layout]):not(.i-amphtml-element),[width][height][sizes]:not(img):not([layout]):not(.i-amphtml-element){position:relative;overflow:hidden!important;color:transparent!important}.i-amphtml-notbuilt:not(.i-amphtml-layout-container)>*,[layout]:not([layout=container]):not(.i-amphtml-element)>*,[width][height][heights]:not([layout]):not(.i-amphtml-element)>*,[width][height][sizes]:not([layout]):not(.i-amphtml-element)>*{display:none}amp-img:not(.i-amphtml-element)[i-amphtml-ssr]>img.i-amphtml-fill-content{display:block}.i-amphtml-notbuilt:not(.i-amphtml-layout-container),[layout]:not([layout=container]):not(.i-amphtml-element),[width][height][heights]:not([layout]):not(.i-amphtml-element),[width][height][sizes]:not(img):not([layout]):not(.i-amphtml-element){color:transparent!important;line-height:0!important}.i-amphtml-ghost{visibility:hidden!important}.i-amphtml-element>[placeholder],[layout]:not(.i-amphtml-element)>[placeholder],[width][height][heights]:not([layout]):not(.i-amphtml-element)>[placeholder],[width][height][sizes]:not([layout]):not(.i-amphtml-element)>[placeholder]{display:block;line-height:normal}.i-amphtml-element>[placeholder].amp-hidden,.i-amphtml-element>[placeholder].hidden{visibility:hidden}.i-amphtml-element:not(.amp-notsupported)>[fallback],.i-amphtml-layout-container>[placeholder].amp-hidden,.i-amphtml-layout-container>[placeholder].hidden{display:none}.i-amphtml-layout-size-defined>[fallback],.i-amphtml-layout-size-defined>[placeholder]{position:absolute!important;top:0!important;left:0!important;right:0!important;bottom:0!important;z-index:1}amp-img.i-amphtml-ssr:not(.i-amphtml-element)>[placeholder]{z-index:auto}.i-amphtml-notbuilt>[placeholder]{display:block!important}.i-amphtml-hidden-by-media-query{display:none!important}.i-amphtml-element-error{background:red!important;color:#fff!important;position:relative!important}.i-amphtml-element-error:before{content:attr(error-message)}i-amp-scroll-container,i-amphtml-scroll-container{position:absolute;top:0;left:0;right:0;bottom:0;display:block}i-amp-scroll-container.amp-active,i-amphtml-scroll-container.amp-active{overflow:auto;-webkit-overflow-scrolling:touch}.i-amphtml-loading-container{display:block!important;pointer-events:none;z-index:1}.i-amphtml-notbuilt>.i-amphtml-loading-container{display:block!important}.i-amphtml-loading-container.amp-hidden{visibility:hidden}.i-amphtml-element>[overflow]{cursor:pointer;position:relative;z-index:2;visibility:hidden;display:initial;line-height:normal}.i-amphtml-layout-size-defined>[overflow]{position:absolute}.i-amphtml-element>[overflow].amp-visible{visibility:visible}template{display:none!important}.amp-border-box,.amp-border-box *,.amp-border-box :after,.amp-border-box :before{box-sizing:border-box}amp-pixel{display:none!important}amp-analytics,amp-auto-ads,amp-story-auto-ads{position:fixed!important;top:0!important;width:1px!important;height:1px!important;overflow:hidden!important;visibility:hidden}html.i-amphtml-fie>amp-analytics{position:initial!important}[visible-when-invalid]:not(.visible),form [submit-error],form [submit-success],form [submitting]{display:none}amp-accordion{display:block!important}@media (min-width:1px){:where(amp-accordion>section)>:first-child{margin:0;background-color:#efefef;padding-right:20px;border:1px solid #dfdfdf}:where(amp-accordion>section)>:last-child{margin:0}}amp-accordion>section{float:none!important}amp-accordion>section>*{float:none!important;display:block!important;overflow:hidden!important;position:relative!important}amp-accordion,amp-accordion>section{margin:0}amp-accordion:not(.i-amphtml-built)>section>:last-child{display:none!important}amp-accordion:not(.i-amphtml-built)>section[expanded]>:last-child{display:block!important}</style>
-<script type='text/javascript' src='https://cdn.ampproject.org/v0.js' async></script>
-<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-<script async custom-element="amp-anim" src="https://cdn.ampproject.org/v0/amp-anim-0.1.js"></script>
-<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
-<script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
-<style amp-custom>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}html{font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}a,body,div,h1,h2,h3,h4,html,p,span{margin:0;padding:0;border:0;font-size:100%;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;vertical-align:baseline}a,a:active,a:focus{outline:0;text-decoration:none}a{color:#55c1f3}*{padding:0;margin:0;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}h1,h2,h3,h4{margin-top:0;margin-bottom:.5rem;color:#57a0f5}h1{font-size:32px}h2{font-size:28px}h3{font-size:22px}p{margin:0 0 10px}p{margin-top:0;margin-bottom:1rem;text-align:justify}.clear{clear:both}.acenter{text-align:center}body{background-color:#020202}.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.btn{display:inline-block;padding:6px 12px;touch-action:manipulation;cursor:pointer;user-select:none;background-image:none;border:1px solid transparent;border-radius:5px;font:250 16px Arial,"Helvetica Neue",Helvetica,sans-serif;width:100%;color:#fff;text-shadow:0 0 3px#000;letter-spacing:1.1px}@keyframes blinking{0%{border:2px solid #fff}100%{border:2px solid #ee0905}}@media (min-width:768px){.container{max-width:720px}.tron-regis{margin:0 10px 0 0}.tron-login{margin:10px 20px 10px 0}}@media (min-width:992px){.container{max-width:960px}.tron-regis{margin:0 10px 0 0}.tron-login{margin:0 10px 0 0}}@media (min-width:1200px){.container{width:1000px}.tron-regis{margin:0 10px 0 0}.tron-login{margin:0 10px 0 0}}.row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.p-0{padding:0}.col-md-12,.col-md-4,.col-md-6,.col-md-8,.col-xs-6{position:relative;width:100%;padding-right:15px;padding-left:15px}.col-xs-6{float:left;width:50%}@media (min-width:768px){.col-md-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-md-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-md-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-md-12{-ms-flex:0 0 100%;flex:0 0 100%;width:100%}.logomobi{display:none}.logform{padding-top:2rem}.tron-regis{margin:0 10px 0 0}.tron-login{margin:0 10px 0 0}}@media (max-width:768px){.logo{display:none}.navbar{position:fixed}.logomobi{padding-top:10px;border-bottom:solid #0dcbe4 2px;border-radius:10px}.content{padding-top:69px}.logo{display:none}.tron-regis{margin:0 10px 0 0}.tron-login{margin:0 10px 0 0}}.pb-2{padding-bottom:.5rem}.paddy{padding:15px}.mt-2{margin-top:.5rem}.mtop{margin-top:.75rem}.mb-3{margin-bottom:.75rem}.pb-5{padding-bottom:1.25rem}.pt-3{padding-top:1rem}.navbar{background-color:#000;right:0;left:0;z-index:1030;width:100%;float:left}.bottom{float:left;width:100%}ul li{list-style-type:none;font-weight:700}ul li:last-child{border:0}.copyleft{text-decoration:none;color:#fff;margin:50px 0}.copyleft a{color:#0f0}.slide{width:100%;border:2px solid #0dcbe4;border-radius:4px;box-shadow:0 0 3px 0 #0dcbe4}.btn-daf{margin:30px 0 30px 0;background:radial-gradient(circle 214px at 49.5% 54.2%,#0dcbe4 0,#000 96%);animation:blinking 0.5s infinite;transition:all 0.4s}@keyframes blinking{0%{border:3px solid #fff}100%{border:3px solid #0dcbe4}}table.SlotGacor{font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;width:100%;text-align:left;border-collapse:collapse;font-size:calc(8px+1vh);margin:0 20px 0 0}table.SlotGacor td,table.SlotGacor th{border:1px solid #265f7f;padding:10px 5px 10px}table.SlotGacor tbody td{font-size:calc(8px+1vh);font-weight:500;color:#bfbfbf}table.SlotGacor thead{background:#265f7f}table.SlotGacor thead th{font-size:calc(12px+1vh);font-weight:700;color:#fff;text-align:center;background:radial-gradient(circle 214px at 49.5% 54.2%,#0dcbe4 0,#000 96%)}.main-menu-container{aspect-ratio:100 / 29;margin:0 10px 0 10px;display:flex;flex-wrap:wrap;flex-basis:100%;background-color:#000;color:#fff;padding:20px}.main-menu-container ul>li{display:inline;padding:0 8px}.main-menu-container ul>li:last-child{border:0}.main-menu-container>li{flex-basis:25%;padding:5px;order:2}.main-menu-container>li:nth-child(-n+4){order:0}.main-menu-container>li>a{display:block;color:#fff;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:calc(8px+1vh);font-weight:500;border:2px solid #265f7f;border-radius:5px;padding:30px;text-align:center;text-transform:uppercase;background-color:#171717;margin:10px;justify-content:center;line-height:20px}.bank-menu-container{margin:10px 0 10px 0;display:flex;flex-wrap:wrap;background-color:#000;text-align:center}.bank-menu-container>li{flex-basis:25%;padding:0 0 0 10px}.bank-menu-container>li:nth-child(-n+4){order:0}.site-description{text-align:left;padding:10px;color:#0dcbe4;border-radius:5px;box-shadow:0 0 8px 4px #0dcbe4}.site-description hr{margin:10px 0 10px 0;color:#0dcbe4;border:1px solid #0dcbe4}.site-description p{font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:16px;font-style:normal;font-variant:normal;font-weight:400;line-height:23px;padding:0 10px;color:#fff;text-align:justify}.site-description li{margin:5px 30px 10px;text-align:justify;color:#fff}.site-description ul>li>a{color:#fff}.site-description a{color:#0f0}.site-description h1{font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:2em;font-style:normal;font-variant:normal;font-weight:500;color:#0f0;margin:20px 0 20px 0;text-align:center}.site-description h2{font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:1.5em;font-style:normal;font-variant:normal;font-weight:500;line-height:23px;color:#0f0;margin:20px 0 20px 0;text-align:center}.site-description h3{font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:1.25em;font-style:normal;font-variant:normal;font-weight:500;line-height:23px;color:#0f0;margin:20px 0 20px 0;padding:10px 10px 10px 10px}.site-description h4{font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:1em;font-style:normal;font-variant:normal;font-weight:500;line-height:23px;color:#70d970;margin:20px 0 20px 0;padding:10px}.accordion h4{background-color:transparent;border:0}.accordion h4{font-size:17px;line-height:28px}.accordion h4 i{height:40px;line-height:40px;position:absolute;right:0;font-size:12px}#sub_wrapper{background:#685934;max-width:650px;position:relative;padding:10px;border-radius:4px;margin:20px auto}.tombol_toc{position:relative;outline:0;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:calc(12px+1vh);font-style:normal;font-variant:normal;font-weight:300;line-height:10px;color:#fff}.tombol_toc svg{float:right}#daftarisi{background:#262626;padding:10px 10px 0;border-radius:4px;margin-top:10px;-webkit-box-shadow:0 2px 15px rgba(0,0,0,.05);box-shadow:0 2px 15px rgba(0,0,0,.05);font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:calc(8px+1vh);font-style:normal;font-variant:normal;font-weight:200;line-height:23px;color:#ffa400}#daftarisi a{text-decoration:none;color:#fff}#daftarisi ol{padding:0 0 0 10px;margin:0}#daftarisi ol li.lvl1{line-height:1.5em;padding:4px 0}#daftarisi ol li.lvl1:nth-child(n+2){border-top:1px dashed #ddd}#daftarisi ol li.lvl1 a{font-weight:600}#daftarisi ol li.lvl2 a{font-weight:300;display:block}#daftarisi ul.circle{list-style-type:square;padding:0 0 0 10px;margin:0;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:calc(6px+1vh);font-style:normal;font-variant:normal;font-weight:200}#daftarisi ol li a:hover{text-decoration:underline}:target::before{content:"";display:block;height:40px;margin-top:-40px;visibility:hidden}.tron-login{-webkit-border-radius:0;-moz-border-radius:0;border-radius:5px;color:#fff;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:calc(12px+1vh);font-style:normal;font-variant:normal;font-weight:700;line-height:23px;padding:10px;background:-webkit-linear-gradient(top,#26427f 0%,#0dcbe4 100%);border:solid #2401e6 3px;text-decoration:none;display:flex;cursor:pointer;text-align:center;justify-content:center}.tron-login:hover{background:#265f7f;border:solid #265f7f 5px;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;text-decoration:none;color:#fff}.tron-regis{-webkit-border-radius:0;-moz-border-radius:0;border-radius:5px;color:#fff;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:calc(12px+1vh);font-style:normal;font-variant:normal;font-weight:700;line-height:23px;padding:10px;background:linear-gradient(to bottom,#d41e1e,#800a0a);-webkit-box-shadow:1px 1px 15px 0 #0dcbe4;-moz-box-shadow:1px 1px 15px 0 #0dcbe4;box-shadow:1px 1px 15px 0 #0dcbe4;color:#fff;text-decoration:none;display:flex;cursor:pointer;text-align:center;justify-content:center;margin:010px 0 0}.tron-regis:hover{background:#b51920;border:solid #b7950b 5px;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;text-decoration:none}.tron{-webkit-border-radius:0;-moz-border-radius:0;border-radius:5px;color:#fff;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:calc(8px+1vh);font-style:normal;font-variant:normal;font-weight:300;line-height:15px;padding:10px;background:radial-gradient(circle 214px at 49.5% 54.2%,#0dcbe4 0,#000 96%);-webkit-box-shadow:1px 1px 10px 0 #0dcbe4;-moz-box-shadow:1px 1px 10px 0 #0dcbe4;box-shadow:1px 1px 10px 0 #0dcbe4;border:solid #0dcbe4 2px;text-decoration:none;display:flex;cursor:pointer;text-align:center;justify-content:center;margin:10px 0 10px 0}.tron:hover{background:#000;border:solid #b7950b 5px;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;text-decoration:none}.tron-images{-webkit-border-radius:0;-moz-border-radius:0;border-radius:5px;color:#ee0905;-webkit-box-shadow:1px 1px 10px 0 #b51920;-moz-box-shadow:1px 1px 10px 0 #b51920;box-shadow:1px 1px 10px 0 #b51920;display:block;cursor:pointer;text-align:center;justify-content:center;width:100%;height:auto;margin-right:auto;margin-left:auto}.tron-images:hover{background:#000;border:solid #b7950b 1px;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.wa-gift{position:fixed;width:44px;display:flex;-webkit-box-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-pack:end;justify-content:flex-end;bottom:160px;right:20px;z-index:9}.wa-livechat{position:fixed;width:44px;display:flex;-webkit-box-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-pack:end;justify-content:flex-end;bottom:80px;right:20px;z-index:9}.spacer{margin:0 0 30px 0;display:block}@media screen and (min-width:701px){.logomobis{margin-left:500px;display:none;visibility:hidden}.logo{background-color:transparent;justify-content:center;display:block;border-bottom:solid #0dcbe4 2px;padding:auto;border-radius:10px;margin-top:20px}.tron-regis{margin:0 10px 0 0}.tron-login{margin:0 10px 0 0}}@media screen and (max-width:701px){.logo{margin-left:500px;border-bottom:solid #000 2px;display:none}.logomobis{background-color:transparent;justify-content:center;display:flex;border-bottom:solid #ee0905 2px;padding:auto;border-radius:10px}.tron-regis{margin:0 10px 0 0}.tron-login{margin:0 10px 0 0}}.updated{border:solid 2px #ee0905;padding:10px}.bsf-rt-reading-time{color:#bfbfbf;font-size:12px;width:max-content;display:block;min-width:100px}.bsf-rt-display-label:after{content:attr(prefix)}.bsf-rt-display-time:after{content:attr(reading_time)}.bsf-rt-display-postfix:after{content:attr(postfix)}.bonus{width:88px;height:102px}@media (min-width:768px){.bonus{width:44px;height:51px}}@media (min-width:320px) and (max-width:480px){.main-menu-container>li>a{padding:18px}}@media (min-width:481px) and (max-width:767px){.main-menu-container>li>a{padding:30px}}p#breadcrumbs{color:#fff;text-align:center}.site-description li h4{color:#fff;line-height:26px;margin:5px;padding:0;text-align:left}.tron-regis{animation:blinkings 1s infinite;transition:all 0.4s;touch-action:manipulation;cursor:pointer}.anim{animation:blinkings 1s infinite}@keyframes blinkings{0%{border:2px solid #00f}100%{border:2px solid #0dcbe4}}span.faq-arrow{float:right;color:#fff}.fixed-footer{display:flex;justify-content:space-around;position:fixed;background:radial-gradient(circle 214px at 49.5% 54.2%,#0dcbe4 0,#000 96%);padding:5px 0;left:0;right:0;bottom:0;z-index:99}.fixed-footer a{flex-basis:calc((100% - 15px * 6) / 5);display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff;max-width:75px;font-size:12px}.fixed-footer .center{transform:scale(1.5) translateY(-5px);background:center no-repeat;background-size:contain;background-color:inherit;border-radius:50%}.fixed-footer amp-img{max-width:30%;margin-bottom:5px}.tada{-webkit-animation-name:tada;animation-name:tada;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;animation-iteration-count:infinite}@-webkit-keyframes tada{0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}10%,20%{-webkit-transform:scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);transform:scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg)}30%,50%,70%,90%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg);transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg)}40%,60%,80%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}@keyframes tada{0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}10%,20%{-webkit-transform:scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);transform:scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg)}30%,50%,70%,90%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg);transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg)}40%,60%,80%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}.wobble{-webkit-animation-name:wobble;animation-name:wobble;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;animation-iteration-count:infinite}@-webkit-keyframes wobble{0%{-webkit-transform:none;transform:none}15%{-webkit-transform:translate3d(-25%,0,0) rotate3d(0,0,1,-5deg);transform:translate3d(-25%,0,0) rotate3d(0,0,1,-5deg)}30%{-webkit-transform:translate3d(20%,0,0) rotate3d(0,0,1,3deg);transform:translate3d(20%,0,0) rotate3d(0,0,1,3deg)}45%{-webkit-transform:translate3d(-15%,0,0) rotate3d(0,0,1,-3deg);transform:translate3d(-15%,0,0) rotate3d(0,0,1,-3deg)}60%{-webkit-transform:translate3d(10%,0,0) rotate3d(0,0,1,2deg);transform:translate3d(10%,0,0) rotate3d(0,0,1,2deg)}75%{-webkit-transform:translate3d(-5%,0,0) rotate3d(0,0,1,-1deg);transform:translate3d(-5%,0,0) rotate3d(0,0,1,-1deg)}100%{-webkit-transform:none;transform:none}}@keyframes wobble{0%{-webkit-transform:none;transform:none}15%{-webkit-transform:translate3d(-25%,0,0) rotate3d(0,0,1,-5deg);transform:translate3d(-25%,0,0) rotate3d(0,0,1,-5deg)}30%{-webkit-transform:translate3d(20%,0,0) rotate3d(0,0,1,3deg);transform:translate3d(20%,0,0) rotate3d(0,0,1,3deg)}45%{-webkit-transform:translate3d(-15%,0,0) rotate3d(0,0,1,-3deg);transform:translate3d(-15%,0,0) rotate3d(0,0,1,-3deg)}60%{-webkit-transform:translate3d(10%,0,0) rotate3d(0,0,1,2deg);transform:translate3d(10%,0,0) rotate3d(0,0,1,2deg)}75%{-webkit-transform:translate3d(-5%,0,0) rotate3d(0,0,1,-1deg);transform:translate3d(-5%,0,0) rotate3d(0,0,1,-1deg)}100%{-webkit-transform:none;transform:none}}.site-description ul li{list-style-type:square}.artikel{color:#fff}ol,ul,li{margin-left:25px}ol,ul{margin-bottom:15px}ul li{color:#fff;list-style:square}li{padding-bottom:10px}.heading-acc{font-size:16px;line-height:1.5;padding:10px 18px;background:#1a800a}.content-acc{padding:10px 18px}table.SlotGacor thead,table.slot88 thead{background:#20d308}table.SlotGacor thead th,table.slot88 thead th{font-size:22px;font-weight:700;color:#fff;text-align:center}table.SlotGacor td,table.SlotGacor th,.slot88 td,.slot88 th{border:1px solid #0dcbe4}table.SlotGacor tbody td,table.slot88 tbody td{font-size:18px;font-weight:300;color:#fff}table td{padding:5px 8px}</style>
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://sipari.jogjaprov.go.id/uploads/berita/slot-gacor/"
-    },
-    "headline": "Situs Gacor Slot Online Resmi Terbaru Gampang Menang",
-    "image": [
-        "https://layananonline.disdukcapil.subulussalamkota.go.id/image/banner-slot-gacor.jpg"
-        ],
-    "datePublished": "2023-01-24T11:24:48+00:00",
-    "dateModified": "2023-01-24T11:24:48+00:00",
-    "author": {
-        "@type": "Person",
-        "name": "slot gacor",
-        "url": "https://sipari.jogjaprov.go.id/uploads/berita/slot-gacor/"
-        },
-    "publisher": {"@type": "Organization",
-        "name": "slot gacor",
-        "logo": {"@type": "ImageObject",
-            "url": "https://layananonline.disdukcapil.subulussalamkota.go.id/Slot-Gacor-Logo.png"
+?>
+<!DOCTYPE html>
+<html>
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <title><?= $setting['aplikasi'] ?></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' />
+    <link rel='shortcut icon' href='<?= $homeurl ?>/favicon.ico' />
+    <link rel='stylesheet' href='<?= $homeurl ?>/dist/bootstrap/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='<?= $homeurl ?>/plugins/fontawesome/css/all.css' />
+    <link rel='stylesheet' href='<?= $homeurl ?>/dist/css/AdminLTE.min.css' />
+    <link rel='stylesheet' href='<?= $homeurl ?>/dist/css/skins/skin-green-light.min.css' />
+    <link rel='stylesheet' href='<?= $homeurl ?>/plugins/iCheck/square/green.css' />
+    <link rel='stylesheet' href='<?= $homeurl ?>/plugins/animate/animate.min.css'>
+    <link rel='stylesheet' href='<?= $homeurl ?>/plugins/sweetalert2/dist/sweetalert2.min.css'>
+    <!-- <link rel='stylesheet' href='<?= $homeurl ?>/plugins/slidemenu/jquery-slide-menu.css'> -->
+    <link rel='stylesheet' href='<?= $homeurl ?>/plugins/toastr/toastr.min.css'>
+    <link rel='stylesheet' href='<?= $homeurl ?>/plugins/radio/css/style.css'>
+    <script src='<?= $homeurl ?>/plugins/jQuery/jquery-2.2.3.min.js'></script>
+    <script src='<?= $homeurl ?>/plugins/tinymce/tinymce.min.js'></script>
+    <link rel='stylesheet' href='<?= $homeurl ?>/dist/css/costum.css' />
+   
+
+    <style>
+        @font-face {
+            font-family: 'tulisan_keren';
+            src: url('<?= $homeurl ?>/dist/fonts/poppins/Poppins-Light.ttf');
         }
-    }
-}
-</script>
+        body {
+            font-family: 'tulisan_keren';
+            font-size: 12px;
+            line-height: 1.42857143;
+            color: #000;
+        }
+        .soal img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .main-header .sidebar-baru {
+            float: left;
+            color: white;
+            padding: 15px 15px;
+            cursor: pointer;
+        }
+
+        .callout {
+            border-left: 0px;
+        }
+
+        .btn {
+
+            border-radius: 20em;
+        }
+
+        .btn-primary {
+            background-color: blue;
+            border-color: #367fa9;
+            font-weight: bolder;
+        }
+
+        .btn.btn-flat {
+            border-radius: 20em;
+        }
+
+        .skin-red-light .sidebar-menu>li:hover>a,
+        .skin-red-light .sidebar-menu>li.active>a {
+            color: #fff;
+            background: #e111e8;
+        }
+        .loader {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url('dist/img/ajax-loader.gif') 50% 50% no-repeat rgb(249, 249, 249);
+            opacity: .8;
+        }
+    </style>
 </head>
-<body>
-<div class="navbar">
-<div class="container">
-<div class="row">
-<div class="col-md-12">
-<div class="logomobi acenter">
-<span itemscope="itemscope" itemtype="http://schema.org/Brand">
-    <a itemprop="url" href="https://sipari.jogjaprov.go.id/uploads/berita/slot-gacor/" title="Slot Gacor"><a href="https://sipari.jogjaprov.go.id/uploads/berita/slot-gacor/" title="Slot Gacor">
-        <amp-img src="https://layananonline.disdukcapil.subulussalamkota.go.id/Slot-Gacor-Logo.png" alt="Slot Gacor" width="150" height="34"/></a>
-<meta itemprop="name" content="Slot Gacor"></a></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="clear"></div>
-<div class="content">
-<div class="container">
-<div class="row mtop">
-<div class="col-md-4">
-<div class="logo acenter">
-<span itemscope="itemscope" itemtype="http://schema.org/Brand"><a itemprop="url" href="https://sipari.jogjaprov.go.id/uploads/berita/slot-gacor/" title="Slot Gacor"><a href="https://sipari.jogjaprov.go.id/uploads/berita/slot-gacor/" title="Slot Gacor">
-    <amp-img src="https://layananonline.disdukcapil.subulussalamkota.go.id/Slot-Gacor-Logo.png" alt="Slot Gacor" width="300" height="68" layout="responsive"/></a>
-<meta itemprop="name" content="Slot Gacor"></a></span>
-</div>
-</div>
-<div class="col-md-8">
-<div class="row logform">
-<div class="col-xs-6">
-<a href="https://qqindobet8.com/registration?refC=UBA95297" target="_blank" rel="nofollow noreferrer"><span class="tron-login">LOGIN</span></a>
-</div>
-<div class="col-xs-6">
-<a href="https://qqindobet8.com/registration?refC=UBA95297" target="_blank" rel="nofollow noreferrer"><span class="tron-regis">DAFTAR</span></a>
-</div>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-md-12 mt-3">
-<a href="https://qqindobet8.com/registration?refC=UBA95297"><button type="login" class="btn btn-daf">DAFTAR SLOT GACOR TERBARU</button></a>
-</div>
-</div>
-</div>
-</div>
-<div class="container">
-<div class="item-8 item-xs-12 m-b-1 slider-area owl-carousel">
-<amp-carousel width="640" height="200" layout="responsive" type="slides" autoplay delay="4000">
-<amp-img src="https://layananonline.disdukcapil.subulussalamkota.go.id/image/banner-slot-gacor.jpg" width="640" height="200" layout="responsive" alt="Situs Slot Gacor Hari Ini">
-<amp-img alt="Situs Slot Gacor Hari Ini" fallback width="640" height="200" layout="responsive" src="https://layananonline.disdukcapil.subulussalamkota.go.id/image/banner-slot-gacor.jpg"></amp-img>
-</amp-img>
-</amp-carousel>
-</div>
-</div>
-<div class="spacer"></div>
-<div class="container">
-<table class="SlotGacor" style="width:100%">
-<thead>
-<tr>
-<th colspan="3">INFORMASI DETAIL SITUS SLOT GACOR</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>🍬 Nama Situs</td>
-<td>Slot Gacor</td>
-</tr>
-<tr>
-<td>🍬 Minimal Deposit</td>
-<td>IDR 10.000</td>
-</tr>
-<tr>
-<td>🍬 Slot Gacor Saat Ini</td>
-<td> Starlight Christmas, Gates Of Olympus, Mahjong Ways</td>
-</tr>
-<tr>
-<td>🍬 Mata Uang</td>
-<td>IDR (Indonesian Rupiah)</td>
-</tr>
-<tr>
-<td>🍬 Sistem Deposit</td>
-<td>All Bank & E-Wallet</td>
-</tr>
-<tr>
-<td>🍬 Informasi Slot</td>
-<td>Slot Gacor Maxwin, Slot Gacor Gampang Menang, Slot Gacor Terpercaya</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="spacer"></div>
-<div class="container">
-<div class="artikel">
-    <h1 style="text-align: center;" itemprop="headline">Situs Gacor Slot Online Resmi Terbaru Gampang Menang</h1>
-    <p style="text-align: justify;">
-        Situs Gacor Slot Onine Resmi Terbaru Gampang Menang selalu menyediakan judi online dengan rtp slot gacor terpercaya hari ini<a href="https://sipari.jogjaprov.go.id/uploads/berita/slot-gacor/">Slot Gacor</a> terpercaya cukup mudah di lakukan dengan deposit melalui slot dana, slot pulsa, transfer bank, dll. Sehingga kamu bisa meraih keuntungan dengan mudah. Anda juga bisa menjadi salah satu dari pemain judi online yang telah menghasilkan keuntungan dari bermain slot online gacor.
-        slot gacor merupakan situs penyedia permainan slot online gacor terlengkap dan terpercaya hari ini di Indonesia. Anda bisa memilih pilihan situs slot mudah menang secara online yang menawarkan banyak koleksi permainan dengan berbagai macam transaksi yang mudah dilakukan seperti slot dana, transaksi bank, slot pulsa, dll. dan di situs gacor slot online resmi ini terbaru gampang menang memiliki RTP tinggi. Para
-        pemain judi online menginginkan untuk bisa dapat kemenangan serta keuntungan besar, di situs slot gacor adalah tempat terbaik yang bisa anda pilih. Anda bisa bermain permainan slot online dengan sistem lain ialah Fair Play, serta berbagai jaminan keamanan dan
-        kenyamanan judi online bisa didapat. Berapapun kemenangan para player, semua itu pasti akan kami bayar kan tanpa adanya batasan waktu ataupun deadline.
-    </p>
+
+<body class='hold-transition skin-green-light  fixed <?= $sidebar ?>'>
+    <span id='livetime'></span>
+    <div class='loader'></div>
+    <div class='wrapper'>
+        <header class='main-header'>
+            <a href='javascript:window.location.reload(true)' class='logo' style='background-color:#f9fafc'>
+                <span class='animated flipInX logo-mini'>
+                    <img src="<?= $homeurl . "/" . $setting['logo'] ?>" height="30px">
+                </span>
+                <span class='animated flipInX logo-lg' style="margin:-3px;color:#000">
+                    <img src="<?= $homeurl . '/' . $setting['logo'] ?>" height="40px"> <?= $setting['sekolah'] ?>
+                </span>
+            </a>
+            <nav class='navbar navbar-static-top' style='background-color:#2c94de;box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1)' role='navigation'>
+                <a href='#' class='sidebar-baru' data-toggle='<?= $disa ?>' role='button'>
+                    <i class="fa fa-bars fa-lg fa-fw"></i>
+                </a>
+
+                <div class='navbar-custom-menu'>
+                    <ul class='nav navbar-nav'>
+                        <li class="visible-xs"><a><?= $siswa['nama'] ?></a></li>
+                        <li class='dropdown user user-menu'>
+                            <a href='#' class='dropdown-toggle' data-toggle='dropdown'>
+                                <?php
+                                if ($siswa['foto'] <> '') :
+                                    if (!file_exists("foto/fotosiswa/$siswa[foto]")) :
+                                        echo "<img src='$homeurl/dist/img/avatar_default.png' class='user-image'   alt='+'>";
+                                    else :
+                                        echo "<img src='$homeurl/foto/fotosiswa/$siswa[foto]' class='user-image'   alt='+'>";
+                                    endif;
+                                else :
+                                    echo "<img src='$homeurl/dist/img/avatar_default.png' class='user-image'   alt='+'>";
+                                endif;
+                                ?>
+                                <span class='hidden-xs'><?= $siswa['nama'] ?> &nbsp; <i class='fa fa-caret-down'></i></span>
+                            </a>
+                            <ul class='dropdown-menu'>
+                                <li class='user-header bg-red'>
+                                    <?php
+                                    if ($siswa['foto'] <> '') :
+                                        if (!file_exists("foto/fotosiswa/$siswa[foto]")) :
+                                            echo "<img src='$homeurl/dist/img/avatar_default.png' class='img-circle' alt='User Image'>";
+                                        else :
+                                            echo "<img src='$homeurl/foto/fotosiswa/$siswa[foto]' class='img-circle' alt='User Image'>";
+                                        endif;
+                                    else :
+                                        echo "<img src='$homeurl/dist/img/avatar_default.png' class='img-circle' alt='User Image'>";
+                                    endif;
+                                    ?>
+                                    <p>
+                                        <?= $siswa['nama'] ?>
+                                    </p>
+                                </li>
+                                <li class='user-footer'>
+                                    <div class='pull-right'>
+                                        <a href='<?= $homeurl ?>/logout.php' class='btn btn-sm btn-default btn-flat'><i class='fa fa-sign-out'></i> Keluar</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <aside class='main-sidebar'>
+            <section class='sidebar'>
+                <hr style="margin:0px">
+                <div class='user-panel'>
+                    <div class='pull-left image'>
+                        <?php
+                        if ($siswa['foto'] <> '') :
+                            if (!file_exists("foto/fotosiswa/$siswa[foto]")) :
+                                echo "<img src='$homeurl/dist/img/avatar_default.png' class='img'  style='max-width:60px' alt='+'>";
+                            else :
+                                echo "<img src='$homeurl/foto/fotosiswa/$siswa[foto]' class='img'  style='max-width:60px' alt='+'>";
+                            endif;else :echo "<img src='$homeurl/dist/img/avatar_default.png' class='img'  style='max-width:60px' alt='+'>";
+                        endif;
+                        ?>
+                    </div>
+                    <div class='pull-left info' style='left:65px'>
+                        <?php
+                        if (strlen($siswa['nama']) > 15) {
+                            $nama = substr($siswa['nama'], 0, 15) . "...";
+                        } else {
+                            $nama = $siswa['nama'];
+                        }
+                        ?>
+                        <p title="<?= $siswa['nama'] ?>"><?= $nama ?></p>
+                        <p><a href='#'><i class='fa fa-circle text-green'></i> online</a>
+                        <p><span class="badge bg-red"><?=$siswa['idpk']?></span> <span class="badge bg-green"><?=$siswa['id_kelas']?></span> <span class="badge bg-purple">S-<?=$siswa['sesi']?></span></p>
+                    </div>
+                </div><br>
+                <hr style="margin:0px">
+                <ul class='sidebar-menu tree' data-widget='tree'>
+                    <li class='header'>Main Menu Peserta Ujian</li>
+                    <li><a href='<?= $homeurl ?>'><i class='fas fa-tachometer-alt fa-fw  '></i> <span> Dashboard</span></a></li>
+                    <li><a href='<?= $homeurl ?>/jadwal'><i class='fas fa-calendar fa-fw  '></i> <span> Jadwal Ujian</span></a></li>
+                    <!-- <li><a href='<?= $homeurl ?>/materi'><i class='fas fa-file fa-fw  '></i> <span> Materi Belajar</span></a></li>
+                    <li><a href='<?= $homeurl ?>/tugassiswa'><i class='fas fa-edit fa-fw  '></i> <span> Tugas Siswa</span></a></li> -->
+                    <li><a href='<?= $homeurl ?>/hasil'><i class='fas fa-tags fa-fw '></i> <span> Hasil Ujian</span></a></li>
+                </ul><!-- /.sidebar-menu -->
+            </section>
+        </aside>
+        <div class='content-wrapper' style='background-image: url(dist/backgroun.jpg);background-size: cover;'>
+            <section class='content-header' style="height:102px;z-index:0;background:#0979c7">
+            </section>
+            <section class='content' style="margin-top:-95px">
+                <?php if ($pg == '') : ?>
+                    <div class='row'>
+                      
+                        <div class='col-md-12'>
+                            <div class='box box-solid'>
+                                <div class='box-header with-border'>
+                                    <h3 class='box-title'><i class="fas fa-bullhorn    "></i> Pengumuman</h3>
+                                </div><!-- /.box-header -->
+                                <div class='box-body'>
+                                    <div id='pengumuman'>
+                                   <?php $logC = 0;
+                                        echo "<ul class='timeline'><br>";
+                                        $logQ = mysqli_query($koneksi, "SELECT * FROM pengumuman where type='eksternal' ORDER BY date DESC");
+
+                                        while ($log = mysqli_fetch_array($logQ)) {
+                                            $logC++;
+                                            $user = mysqli_fetch_array(mysqli_query($koneksi, "SELECT * FROM pengawas WHERE id_pengawas='$log[user]'"));
+                                            if ($log['type'] == 'internal') {
+                                                $bg = 'bg-green';
+                                                $color = 'text-green';
+                                            } else {
+                                                $bg = 'bg-blue';
+                                                $color = 'text-blue';
+                                            }
+                                            echo "
+                                                        
+                                                        
+                                                        <!-- timeline time label -->
+                                                        
+                                                        <li><i class='fa fa-envelope $bg'></i>
+                                                        <div class='timeline-item'>
+                                                        <span class='time'> <i class='fa fa-calendar'></i> " . buat_tanggal('d-m-Y', $log['date']) . " <i class='fa fa-clock-o'></i> " . buat_tanggal('h:i', $log['date']) . "</span>
+                                                        <h3 class='timeline-header' style='background-color:#f9f0d5'><a class='$color' href='#'>$log[judul]</a> <small> $user[nama]</small>
+                                                        
+                                                        </h3>
+                                                        <div class='timeline-body'>
+                                                        " . ucfirst($log['text']) . "	
+                                                        </div>
+                                                        
+                                                        </div>
+                                                        </li>
+                                            
+                                                        
+                                                    ";
+                                        }
+                                        if ($logC == 0) {
+                                            echo "<p class='text-center'>Tidak ada aktifitas.</p>";
+                                        }
+                                        echo "</ul>";?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                        
+                <?php elseif ($pg == 'jadwal') : ?>
+                    <div class='row'>
+                        <div class='col-md-12'>
+                            <div class='alert alert-info alert-dismissible'>
+                                <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>×</button>
+                                <i class='icon fa fa-info'></i>
+                                Tombol ujian akan aktif bila waktu sudah sama dengan jadwal ujian,
+                                Refresh browser atau tekan F5 jika waktu ujian belum aktif
+                                </div>
+                        </div>
+                        <div id="boxtampil" class='col-md-12'>
+                            <div id='formjadwalujian' class='box box-solid'>
+                                <div class='box-header with-border'>
+                                    <h3 class='box-title'><i class="fas fa-calendar-alt    "></i> Jadwal Ujian Hari ini</h3>
+                                    <!-- <div class='box-tools'>
+                                        <button class='btn btn-flat btn-primary'><span id='waktu' style="font-family:'OCR A Extended'"><?= $waktu ?> </span></button>
+                                    </div> -->
+                                </div><!-- /.box-header -->
+                                <div class='box-body'>
+                                    <?php
+
+                                    $mapelQ = mysqli_query($koneksi, "SELECT * FROM ujian WHERE (level='$level' or level='semua') AND sesi='$idsesi' AND status='1' ORDER BY tgl_ujian ");
+
+                                    ?>
+                                    <?php while ($mapelx = mysqli_fetch_array($mapelQ)) : ?>
+                                        <?php if (date('Y-m-d', strtotime($mapelx['tgl_selesai'])) >= date('Y-m-d') and date('Y-m-d', strtotime($mapelx['tgl_ujian'])) <= date('Y-m-d')) : ?>
+                                            <?php $datakelas = unserialize($mapelx['kelas']); ?>
+                                            <?php $datapk = unserialize($mapelx['id_pk']); ?>
+                                            <?php if (in_array($siswa['idpk'], $datapk) or in_array('semua', $datapk)) : ?><?php if (in_array($siswa['id_kelas'], $datakelas) or in_array('semua', $datakelas)) : ?>
+                                                    <?php
+                                                    $no++;
+                                                    // $pelajaran = explode(' ', $mapelx['nama']);
+                                                    $where = array(
+                                                       // 'id_ujian' => $mapelx['id_ujian'],
+                                                        'id_mapel' => $mapelx['id_mapel'],
+                                                        'id_siswa' => $id_siswa
+                                                        //'kode_ujian' => $mapelx['kode_ujian']
+                                                    );
+                                                    $nilai = fetch($koneksi, 'nilai', $where);
+                                                    $ceknilai = rowcount($koneksi, 'nilai', $where);
+                                                    if ($ceknilai == '0') :
+                                                        if (strtotime($mapelx['tgl_ujian']) <= time() and time() <= strtotime($mapelx['tgl_selesai'])) :
+                                                            $status = '<label class="label label-success">Tersedia </label>';
+                                                            $btntest = "<button data-id='$mapelx[id_ujian]' data-ids='$id_siswa' class='btnmulaitest btn btn-block btn-sm btn-primary'><i class='fa fa-edit'></i> MULAI</button>";
+                                                        elseif (strtotime($mapelx['tgl_ujian']) >= time() and time() <= strtotime($mapelx['tgl_selesai'])) :
+                                                            $status = '<label class="label label-danger">Belum Waktunya</label>';
+                                                            $btntest = "<button' class='btn btn-block btn-sm btn-danger disabled'> BELUM UJIAN</button>";
+                                                        else :
+                                                            $status = '<label class="label label-danger">Telat Ujian</label>';
+                                                            $btntest = "<button' class='btn btn-block btn-sm btn-danger disabled'> Telat Ujian</button>";
+                                                        endif;
+                                                    else :
+                                                        if ($nilai['ujian_mulai'] <> '' and $nilai['ujian_berlangsung'] <> '' and $nilai['ujian_selesai'] == '') :
+                                                            
+                                                            if ($mapelx['reset'] == 1) {
+                                                                if($nilai['online']==0){
+                                                                $status = '<label class="label label-warning">Berlangsung</label>';
+                                                                $btntest = "<button data-id='$mapelx[id_ujian]' data-ids='$id_siswa' class='btnmulaitest btn btn-block btn-sm btn-success'><i class='fas fa-edit'></i> LANJUTKAN</button>";
+                                                                }else{
+                                                                $status = '<label class="label label-warning">Siswa sedang aktif</label>';
+                                                                $btntest = "<button  class=' btn btn-block btn-danger'><i class='fas fa-edit'></i> Minta Reset</button>";
+                                                                }
+                                                            } else {
+                                                                $status = '<label class="label label-warning">Berlangsung</label>';
+                                                                $btntest = "<button data-id='$mapelx[id_ujian]' data-ids='$id_siswa' class='btnmulaitest btn btn-block btn-sm btn-success'><i class='fas fa-edit'></i> LANJUTKAN</button>";
+                                                               
+                                                            } 
+                                                        else :
+                                                            if ($nilai['ujian_mulai'] <> '' and $nilai['ujian_berlangsung'] <> '' and $nilai['ujian_selesai'] <> '') {
+                                                                if($mapelx['ulang_kkm']==0){
+                                                                $status = '<label class="label label-primary">Selesai</label>';
+                                                                $btntest = "<button class='btn btn-block btn-success btn-sm disabled'> Sudah Ujian</button>";
+                                                                }else{
+                                                                    if($nilai['skor']>=$mapelx['kkm']){
+                                                                        $btntest = "<button class='btn btn-success btn-block btn-sm '>Kamu Lulus - Skor : ".$nilai['skor']."</button>";  
+                                                                    } else{
+                                                                        $btntest = "<button data-id='".$nilai['id_nilai']."' class='btn btn-ulang btn-warning btn-block btn-sm '>Belum Lulus - Skor : ".$nilai['skor']."</button>";   
+                                                                    }
+                                                                }
+                                                            } else {
+                                                                $btntest = "<button class='btn btn-block btn-danger btn-sm disabled'> Eloy</button>";
+                                                            }
+                                                        endif;
+                                                    endif;
+                                                    ?>
+                                                    <?php if ($mapelx['soal_agama'] <> null) : ?>
+                                                        <?php if ($mapelx['soal_agama'] == $siswa['agama']) : ?>
+
+                                                            <div class="col-md-4 animated tada">
+
+                                                                <!-- Widget: user widget style 1 -->
+                                                                <div class="box box-widget widget-user-2">
+                                                                    <!-- Add the bg color to the header using any of the bg-* classes -->
+                                                                    <div class="widget-user-header bg-blue" style="padding: 6px">
+                                                                        <div class="widget-user-image">
+                                                                            <img src="dist/img/soal.png" alt="">
+                                                                        </div>
+                                                                        <!-- /.widget-user-image -->
+                                                                        <h3 class="widget-user-username">
+                                                                             <?php
+                                                                                if (strlen($mapelx['nama']) > 10) {
+                                                                                    echo substr($mapelx['nama'], 0, 10) . "...";
+                                                                                } else {
+                                                                                    echo $mapelx['nama'];
+                                                                                }
+                                                                             ?></h3>
+                                                                        <h5 class="widget-user-desc"><i class="fa fa-tag"></i> <?= $mapelx['kode_ujian'] ?> &nbsp;
+                                                                            <i class="fa fa-user"></i> <?= $mapelx['level'] ?> &nbsp;
+                                                                            <i class="fa fa-wrench"></i> <?php
+                                                                                                            $dataArray = unserialize($mapelx['id_pk']);
+                                                                                                            foreach ($dataArray as $key => $value) :
+                                                                                                                echo "<small class='label label-success'>$value </small>&nbsp;";
+                                                                                                            endforeach;
+
+                                                                                                            ?>
+                                                                        </h5>
+                                                                    </div>
+                                                                    <div class="box-footer no-padding">
+                                                                        <ul class="nav nav-stacked">
+                                                                            <li>
+                                                                                <a href="#">
+                                                                                    <i class='fa fa-clock-o'></i> Ujian Dimulai
+                                                                                    <span class="pull-right badge bg-green"><?= $mapelx['tgl_ujian'] ?></span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#">
+                                                                                    <i class='fa fa-clock-o'></i> Ujian Ditutup
+                                                                                    <span class="pull-right badge bg-red"><?= $mapelx['tgl_selesai'] ?></span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#">
+                                                                                    <i class='fa  fa-hourglass-1'></i> Durasi Ujian
+                                                                                    <span class="pull-right badge bg-purple"><?= $mapelx['tampil_pg'] + $mapelx['tampil_esai'];  ?> Soal / <?= $mapelx['lama_ujian'] ?> menit</span>
+                                                                                </a>
+                                                                            </li>
+                                                                            <li><a href="#"><i class='fa fa-feed'></i> Status Ujian <span class="pull-right">
+                                                                                        <?php
+                                                                                        if ($mapelx['status'] == 1) {
+                                                                                            echo "<i class='fa fa-spinner fa-spin'></i> <label class='badge bg-green'>Sedang Aktif</label> <label class='badge bg-red'>Sesi $mapelx[sesi]</label>";
+                                                                                        } elseif ($mapelx['status'] == 0) {
+                                                                                            echo "<label class='badge bg-red'>Tidak Aktif</label>";
+                                                                                        }
+                                                                                        ?>
+                                                                                    </span></a></li>
+                                                                            <li>
+                                                                                <a href="#">
+                                                                                    <i class='fa  fa-hourglass-1'></i> Nilai KKM
+                                                                                    <span class="badge bg-purple pull-right"><?= $mapelx['kkm'] ?></span>
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <center style="padding: 8px">
+                                                                            <?= $btntest ?>
+                                                                        </center>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- /.widget-user -->
+                                                            </div>
+                                                        <?php endif; ?>
+                                                    <?php else : ?>
+
+                                                        <div class="col-md-4 animated tada">
+
+                                                            <!-- Widget: user widget style 1 -->
+                                                            <div class="box box-widget box-solid widget-user-2">
+                                                                <!-- Add the bg color to the header using any of the bg-* classes -->
+                                                                <div class="widget-user-header bg-blue" style="padding: 6px">
+                                                                    <div class="widget-user-image">
+                                                                        <img src="dist/img/soal.png" alt="">
+                                                                    </div>
+                                                                    <!-- /.widget-user-image -->
+                                                                    <h5 class="widget-user-usernam"><?php
+                                                                                if (strlen($mapelx['nama']) > 25) {
+                                                                                    echo substr($mapelx['nama'], 0, 25) . "...";
+                                                                                } else {
+                                                                                    echo $mapelx['nama'];
+                                                                                }
+                                                                             ?></h5>
+                                                                    <h5 class="widget-user-desc">
+                                                                        <i class="fa fa-tag"></i> <?= $mapelx['kode_ujian'] ?> &nbsp;
+                                                                        <i class="fa fa-user"></i> <?= $mapelx['level'] ?> &nbsp;<i class="fa fa-wrench"></i> <?php
+                                                                                                        $dataArray = unserialize($mapelx['id_pk']);foreach ($dataArray as $key => $value) :
+                                                                                                            echo "<small class='label label-success'>$value </small>&nbsp;";
+                                                                                                        endforeach;
+
+                                                                                                        ?>
+                                                                    </h5>
+                                                                    <span class="badge bg-purple"><?= $mapelx['tampil_pg'] + $mapelx['tampil_esai']  ?> Soal / <?= $mapelx['lama_ujian'] ?> menit</span>
+                                                                    <span class="badge bg-purple">KKM : <?= $mapelx['kkm'] ?></span>
+                                                                    <br>
+                                                                    
+                                                                </div>
+                                                                <div class="box-footer no-padding">
+                                                                    <ul class="nav nav-stacked">
+                                                                       
+                                                                        <li>
+                                                                        <center>
+                                                                        <span class="badge bg-green"><?= $mapelx['tgl_ujian'] ?></span>
+                                                                        <span class="badge bg-red"><?= $mapelx['tgl_selesai'] ?></span>
+                                                                        <i class='fa fa-spinner fa-spin'></i>   
+                                                                        </center>
+                                                                        </li>
+                                                                        
+                                                                    </ul>
+                                                                    <center style="padding: 5px">
+                                                                        <?= $btntest ?>
+                                                                    </center>
+                                                                </div>
+                                                            </div>
+                                                            <!-- /.widget-user -->
+                                                        </div>
+                                                    <?php endif; ?>
+
+                                                <?php endif; ?>
+                                            <?php endif; ?>
+                                        <?php endif; ?>
+                                    <?php endwhile; ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        $(document).on('click', '.btnmulaitest', function() {
+                            var idm = $(this).data('id');
+                            var ids = $(this).data('ids');
+                            console.log(idm + '-' + ids);
+
+                            $.ajax({
+                                type: 'POST',
+                                url: 'konfirmasi.php',
+                                data: 'idm=' + idm + '&ids=' + ids,
+                                success: function(response) {
+                                    $('#formjadwalujian').hide();
+                                    $('#boxtampil').html(response).slideDown();
+
+                                }
+                            });
+
+                        });
+
+                        $(document).on('click', '.btn-ulang', function() {
+                            var idn = $(this).data('id');
+                            
+                            console.log(idn);
+                                swal({
+                                    title: 'kamu yakin akan mengulang ujian?',
+                                    html: 'setiap mengulang akan tercatat!',
+                                    type: 'warning',
+                                    showCancelButton: true,
+                                    confirmButtonColor: '#3085d6',
+                                    cancelButtonColor: '#d33',
+                                    confirmButtonText: 'Iya'
+                                }).then((result) => {
+                                    if (result.value) {
+                                        $.ajax({
+                                            type: 'POST',
+                                            url: 'gantistatus.php?pg=ulangujian',
+                                            data: 'id=' + idn,
+                                            success: function(response) {
+                                               location.reload();
+                                            }
+                                        });
+                                    }
+                                })
+                           
+
+                        });
+                    </script>
+                    
+                <?php elseif ($pg == 'tugassiswa') : ?>
+                    <?php include "tugas.php" ?>
+                <?php elseif ($pg == 'materi') : ?>
+                    <?php include "materi.php" ?>
+                <?php elseif ($pg == 'lihattugas') : ?>
+                    <?php include "lihattugas.php" ?>
+                    <?php elseif ($pg == 'lihatmateri') : ?>
+                    <?php include "lihatmateri.php" ?>
+              
+                <?php elseif ($pg == 'lihathasil') : ?>
+                    <?php
+                    $ac = dekripsi($ac);
+                    $nilai = mysqli_fetch_array(mysqli_query($koneksi, "SELECT * FROM nilai WHERE id_siswa='$id_siswa' and id_ujian='$ac'"));
+                    if ($nilai['hasil'] == 1) :
+                        $mapel = mysqli_fetch_array(mysqli_query($koneksi, "SELECT * FROM mapel WHERE id_mapel='$nilai[id_mapel]'"));
+                    ?>
+                        <div class='row'>
+                            <div class='col-md-12'>
+                                <div class='box box-solid'>
+                                    <div class='box-header with-border'>
+                                        <h3 class='box-title'><i class="fas fa-file-signature    "></i> Data Hasil Ujian</h3>
+                                    </div><!-- /.box-header -->
+                                    <div class='box-body'>
+                                        <table class='table table-bordered table-striped'>
+                                            <tr>
+                                                <th width='150'>No Induk</th>
+                                                <td width='10'>:</td>
+                                                <td><?= $siswa['nis'] ?></td>
+                                                <td style="text-align:center; width:150">Nilai</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Nama</th>
+                                                <td width='10'>:</td>
+                                                <td><?= $siswa['nama'] ?></td>
+                                                <td rowspan='4' style='font-size:30px; text-align:center; width:150'><?= $nilai['total'] ?></td>
+                                            </tr>
+                                            <tr><th>Kelas</th>
+                                                <td width='10'>:</td>
+                                                <td><?= $siswa['id_kelas'] ?></td>
+                                            </tr><tr>
+                                                <th>Mata Pelajaran</th>
+                                                <td width='10'>:</td>
+                                                <td><?= $mapel['nama'] ?></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Nama Ujian</th>
+                                                <td width='10'>:</td>
+                                                <td><?= $nilai['kode_ujian'] ?></td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <div class="nav-tabs-custom">
+                                            <ul class="nav nav-tabs">
+                                                <li class="active"><a href="#tab_1" data-toggle="tab" aria-expanded="true">Detail Jawaban</a></li>
+                                                <li class=""><a href="#tab_2" data-toggle="tab" aria-expanded="true">Peringkat</a></li>
+
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="tab_1">
+                                                    <div class='table-responsive'>
+                                                        <table id='example1' class='table table-bordered table-striped'>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th width='5px'>#</th>
+                                                                    <th>Soal PG</th>
+
+                                                                    <th style='text-align:center'>Hasil</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <?php $jawaban = unserialize($nilai['jawaban']); ?>
+                                                                <?php foreach ($jawaban as $key => $value) : ?>
+                                                                    <?php
+                                                                    $no++;
+                                                                    $soal = mysqli_fetch_array(mysqli_query($koneksi, "SELECT * FROM soal WHERE id_soal='$key'"));
+                                                                    if ($value == $soal['jawaban']) :
+                                                                        $status = "<span class='text-green'><i class='fa fa-check'></i></span>";
+                                                                    else :
+                                                                        $status = "<span class='text-red'><i class='fa fa-times'></i></span>";
+                                                                    endif;
+                                                                    ?>
+                                                                    <tr>
+                                                                        <td><?= $no ?></td>
+                                                                        <td><?= $soal['soal'] ?></td>
+
+                                                                        <td style='text-align:center'><?= $status ?></td>
+                                                                    </tr>
+                                                                <?php endforeach; ?>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="tab_2">
+                                                    <table class='table-responsive'>
+                                                        <table id='example1' class='table table-striped'>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th style='text-align:center' width='5px'>Peringkat</th>
+                                                                    <th>Nama Siswa</th>
+                                                                    <th style='text-align:center'>Hasil</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <?php $nilaix = mysqli_query($koneksi, "SELECT * FROM nilai WHERE  id_ujian='$ac' order by cast(skor as decimal) DESC "); ?>
+                                                                <?php $no = 0; ?>
+                                                                <?php while ($peringkat = mysqli_fetch_array($nilaix)) : ?>
+                                                                    <?php
+                                                                    $no++;
+                                                                    $siswa = mysqli_fetch_array(mysqli_query($koneksi, "select * from siswa where id_siswa='$peringkat[id_siswa]'"));
+                                                                    if ($peringkat['id_siswa'] == $id_siswa) {
+                                                                        $style = "style='background:yellow;font-size:20px;'";
+                                                                    } else {
+                                                                        $style = "";
+                                                                    }
+                                                                    ?>
+                                                                    <tr <?= $style ?>>
+                                                                        <td style='text-align:center'><?= $no ?></td>
+                                                                        <td><?= $siswa['nama'] ?></td>
+                                                                        <td style='text-align:center'><?= $peringkat['skor'] ?></td>
+                                                                    </tr>
+                                                                <?php endwhile; ?>
+                                                            </tbody>
+                                                        </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php else : ?>
+                        <div class='row'>
+                            <div class='col-md-12'>
+                                <div class='box box-solid'>
+                                    <div class='box-header with-border'>
+                                        <h3 class='box-title'><i class="fas fa-file-signature    "></i> Data Hasil Ujian</h3>
+                                    </div>
+                                    <div class='box-body'>
+                                        <div class='alert alert-success alert-dismissible'>
+                                            <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>×</button>
+                                            <i class='icon fa fa-info'></i>
+                                            maaf untuk hasil nilai belum dapat dilihat, akan diproses terlebih dahulu,,
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endif; ?>
+
+                <?php elseif ($pg == 'hasil') : ?>
+                    <div class='row'>
+                        <div class='col-md-12'>
+                            <div class='box box-solid'>
+                                <div class='box-header with-border'>
+                                    <h3 class='box-title'><i class="fas fa-file-signature    "></i> Data Hasil Ujian</h3>
+                                </div><!-- /.box-header -->
+                                <div class='box-body'>
+                                    <div class="nav-tabs-custom">
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a href="#tab_1" data-toggle="tab" aria-expanded="true">Hasil Ujian</a></li>
+                                            <li class=""><a href="#tab_2" data-toggle="tab" aria-expanded="true">Hasil Tugas</a></li>
+                    
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="tab_1">
+                                                <div class="alert alert-info" role="alert">
+                                                    <strong>Daftar Ujian yang sudah dikerjakan</strong>
+                                                </div>
+                                                <table id='example1' class='table table-bordered table-striped'>
+                                                    <thead>
+                                                        <tr>
+                                                            <th width='5px'>#</th>
+                                                            <th>Kode Tes</th>
+                                                            <th class='hidden-xs'>Ujian Selesai</th>
+                                                            <th class='hidden-xs'>Status</th>
+                                                            <th></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <?php $nilaix = mysqli_query($koneksi, "SELECT * FROM nilai WHERE id_siswa='$id_siswa' AND ujian_selesai <>'' ORDER BY ujian_selesai ASC "); ?>
+                                                        <?php while ($nilai = mysqli_fetch_array($nilaix)) : ?>
+                                                            <?php
+                                                            $no++;
+                                                            $mapel = mysqli_fetch_array(mysqli_query($koneksi, "SELECT * FROM mapel WHERE id_mapel='$nilai[id_mapel]'"));
+                                                            $namamapel = mysqli_fetch_array(mysqli_query($koneksi, "SELECT * FROM mata_pelajaran WHERE kode_mapel='$mapel[nama]'"));
+                                                            ?>
+                                                            <tr>
+                                                                <td><?= $no ?></td>
+                                                                <td><?= $mapel['kode'] . '-' . $namamapel['nama_mapel'] ?></td>
+                                                                <td class='hidden-xs'><?= $nilai['ujian_selesai'] ?></td>
+                                                                <td class='hidden-xs'><label class='label label-primary'>Selesai</label></td>
+                                                                <td>
+                                                                    <a href="<?= $homeurl . '/lihathasil/' . enkripsi($nilai['id_ujian']) ?>"><button class='btn btn-sm btn-success'><i class='fa fa-search'></i> Lihat Hasil</button></a>
+                                                                </td>
+                                                            </tr>
+                                                        <?php endwhile; ?>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tab-pane" id="tab_2">
+                                                <div class="alert alert-success" role="alert">
+                                                    <strong>Daftar Tugas yang sudah dikerjakan</strong>
+                                                </div>
+                                                <table id='example1' class='table table-bordered table-striped'>
+                                                    <thead>
+                                                        <tr>
+                                                            <th width='5px'>#</th>
+                                                            <th>Nama Mapel</th>
+                                                            
+                                                            <th class='hidden-xs'>Update Dikerjakan</th>
+                                                            <th>Nilai</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <?php $tugasx = mysqli_query($koneksi, "SELECT * FROM jawaban_tugas WHERE id_siswa='$id_siswa' "); ?>
+                                                        <?php while ($tugas = mysqli_fetch_array($tugasx)) : ?>
+                                                            <?php
+                                                            $nox++;
+                                                            $mapel = mysqli_fetch_array(mysqli_query($koneksi, "SELECT * FROM tugas WHERE id_tugas='$tugas[id_tugas]'"));
+                                                            
+                                                            ?>
+                                                            <tr>
+                                                                <td><?= $nox ?></td>
+                                                                <td><?= $mapel['mapel'] ?></td>
+                                                                <td class='hidden-xs'><?= $tugas['tgl_update'] ?></td>
+                                                                <td ><label class='label label-primary'><?= $tugas['nilai']?></label></td>
+                                                                
+                                                            </tr>
+                                                        <?php endwhile; ?>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php elseif ($pg == 'testongoing') : ?>
+                    <?php
+                    $ac = dekripsi($ac);
+                    $id = dekripsi($id);
+                    $qcek = mysqli_query($koneksi, "select * from nilai where id_ujian='$ac' and id_siswa='$id'");
+                    $cek = mysqli_num_rows($qcek);
+                    if ($cek <> 0) :$query = mysqli_fetch_array(mysqli_query($koneksi, "SELECT * FROM ujian WHERE id_ujian='$ac'"));
+                        $idmapel = $query['id_mapel'];
+                        $no_soal = 0;
+                        $no_prev = $no_soal - 1;
+                        $no_next =$no_soal + 1;
+                        $id_mapel = $idmapel;
+                        $id_siswa = $id;
+                        $where = array(
+                            'id_siswa' => $id_siswa,
+                            'id_mapel' => $id_mapel
+                        );
+                        $where2 = array(
+                            'id_siswa' => $id_siswa,
+                            'id_mapel' => $id_mapel,
+                            'id_ujian' => $ac
+                        );
+
+                        $mapel = fetch($koneksi, 'ujian', array('id_mapel' => $id_mapel, 'id_ujian' => $ac));
+                        update($koneksi, 'nilai', array('ujian_berlangsung' => $datetime), $where2);
+                        $nilai = fetch($koneksi, 'nilai', $where2);
+                        $habis = strtotime($nilai['ujian_berlangsung']) - strtotime($nilai['ujian_mulai']);
+                        $detik = ($mapel['lama_ujian'] * 60) - $habis;
+                        $dtk = $detik % 60;
+                        $mnt = floor(($detik % 3600) / 60);
+                        $jam = floor(($detik % 86400) / 3600);
+                        
+                        $cekpg = mysqli_num_rows(mysqli_query($koneksi, "SELECT * FROM soal WHERE id_mapel='$id_mapel' AND jenis='1'"));
+                        $cekesai = mysqli_num_rows(mysqli_query($koneksi, "SELECT * FROM soal WHERE id_mapel='$id_mapel' AND jenis='2'"));
+                        $quero = mysqli_fetch_array(mysqli_query($koneksi, "SELECT tampil_pg,tampil_esai FROM mapel WHERE id_mapel='$id_mapel'"));
+
+                        if ($cekpg >= $quero['tampil_pg']) {
+                            $soalpg = $quero['tampil_pg'];
+                        } else {
+                            $soalpg = $cekpg;
+                        }
+                        if ($cekesai >= $quero['tampil_esai']) {
+                            $soalesai = $quero['tampil_esai'];
+                        } else {
+                            $soalpg = $cekesai;
+                        }
+                        $jumsoal = $soalpg + $soalesai;
+
+                    ?>
+                        <div class='row'>
+                            <div class="col-md-1"></div>
+                            <div class='col-md-10' >
+                                <div class='box box-solid' style="box-shadow: 0 1px 15px 5px rgba(0, 0, 0, 0.25);">
+                                    <div class='box-header with-border' >
+
+                                        <h3 class='box-title'><span class='hidden-xs'>Soal Nomor </span> <span class='btn bg-primary' id='displaynum'><b><?= $no_next ?></b></span></h3>
+
+                                        <div class='box-title pull-right'>
+
+                                            <div class='btn btn-default'>
+                                                <span style="font-size:20px">Sisa Waktu </span><span style="font-size:20px" id='countdown'> <span id='htmljam'><?= $jam ?></span>:<span id='htmlmnt'><?= $mnt ?></span>:<span id='htmldtk'><?= $dtk ?></span></span>
+                                            </div>
+                                            <div class='btn-group'>
+                                                <form action='' method='post'>
+                                                    <input type='submit' name='done' id='done-submit' style='display:none;' />
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div><!-- /.box-header -->
+                                    <div class="box-header with-border bg-gray">
+
+                                        <div class='btn-group'>
+                                            <button type='button' id='smaller_font' class='btn bg-purple'> - </button>
+                                            <button type='button' id='reset_font' class='btn bg-purple'><i class='fa fa-sync-alt'></i></button>
+                                            <button type='button' id='bigger_font' class='btn bg-purple'> + </button>
+                                        </div>
+                                        <div class='box-title pull-right'>
+
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalnosoal">Daftar Soal <i class="fas fa-edit    "></i></button>
+                                            <!-- Button trigger modal -->
+                                            <button type="button" id='btnfull' class="btn btn-primary" onclick="openFullscreen()" > <i class="fas fa-arrows-alt    "></i></button>
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="modalnosoal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title"><i class="fas fa-edit    "></i> Daftar Soal</h5>
+
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div id="loadnosoal">
+
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-times    "></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id='loadsoal' >
+                                         <div id='loading-image'>
+                                            <center>
+                                                <img src="<?=$homeurl ?>/dist/img/loader.gif" class="img-fluid" width="150">
+                                                <br><b>Sedang memproses soal..</b>
+                                                <br><b>jika terlalu lama silahkan logout dan login lagi</b>
+                                                <br><b>cek koneksi internet buka menggunakan chrome</b>
+                                            </center>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    <?php else : ?>
+                        <?php jump($homeurl); ?>
+                    <?php endif; ?>
+                <?php else : ?>
+                    <?php jump($homeurl); ?>
+                <?php endif; ?>
+            </section><!-- /.content -->
+        </div><!-- /.content-wrapper -->
+        <footer class='main-footer hidden-xs'>
+            <div class='container'>
+                <div class='pull-left hidden-xs'>
+                    <strong>
+                        <span id='end-sidebar'>
+                            &copy; 2019 <?= APLIKASI . " v" . VERSI . " r" . REVISI ?>
+                        </span>
+                    </strong>
+                </div>
+        </footer>
+    </div><!-- ./wrapper -->
     
-    <p style="text-align: justify;">
-        <a href="https://sipari.jogjaprov.go.id/uploads/berita/slot-gacor/">Slot Online</a> adalah kumpulan permainan slot paling gacor yang menyediakan berbagai keuntungan gampang menang dan terpercaya. Disini kami berusaha sebisa mungkin untuk menyajikan pilihan game memiliki tingkat kemenangan tinggi. Permainan slot gacor gampang menang biasanya menjadi pilihan yang paling banyak dicari oleh
-        para member judi online . Setiap member judi online bermain dengan taruhan uang asli melalui deposit slot dana min 10.000. Termasuk situs gacor slot online resmi tentu mengharapkan agar para member judi online meraih big win mudah. Karena itu satu cara bisa dilakukan untuk bisa memperoleh jackpot mudah dalam sebuah permainan
-        yaitu dengan memilih game slot gacor dengan memilih pilihan permainan rtp slot yang tinggi dan terpercaya.
-    </p>
-    
-    <h2 style="text-align: center;">Rekomendasi 20 Situs Slot Gacor Menurut Member Judi Online Terpercaya Hari Ini</h2>
-    <p style="text-align: justify;">
-        Dari Banyaknya pilihan provider game <a href="https://sipari.jogjaprov.go.id/uploads/berita/slot-gacor/">Situs Slot Gacor</a> sebagaimana disebutkan di atas, tentunya juga itu masih membingungkan bagi pemula slot online khususnya untuk bisa menemukan pilihannya. Maka dari itu cara bisa dilakukan adalah mencari beberapa
-        referensi serta rekomendasi terbaik. Salah satu di antaranya kita akan merekomendasikan Anda 15 rekomendasi game judi online gampang menang terpercaya di Indonesia saat ini. Beberapa pilihan judi online dimaksud diantaranya meliputi
-        sebagaimana disebutkan berikut:
-    </p>
-    <h3>1. Slot Online Gacor Pragmatic Play</h3>
-    <p style="text-align: justify;">
-        Sepertinya memang tidak dapat diragukan lagi bahwa pilihan pertama paling gacor paling banyak di cari oleh para pecinta taruhan pertama adalah pragmatic Play. Di dalamnya ada di sajikan ragam pilihan game slot online paling gacor
-        seperti sweet Bonanza, gold train, gate of Olympus, dan banyak pilihan game slot dengan RTP tinggi lainnya.
-    </p>
-    <h3>2. Slot Online Gacor Habanero</h3>
-    <p style="text-align: justify;">
-        Nama habanero juga sangat familiar serta populer di kalangan para pecinta taruhan slot karena hadir menyajikan pilihan game mudah menang. Banyak sekali pilihan judi slot online gacor mudah menang ditawarkan di dalamnya mulai dari
-        permainan hot-hot Fruit, koi gate, serta berbagai pilihan nama lainnya punya nilai RTP kemenangan votalitas tinggi.
-    </p>
-    <h3>3. Slot Online Gacor Playtech</h3>
-    <p style="text-align: justify;">
-        Playtech adalah salah satu pilihan provider menguasai industri perjudian di wilayah Asia. Bisa menemukan dan mencoba berbagai pilihan game taruhan judi slot gacor mudah menang dengan teknologi baru dan kekinian. Antaranya jenis pilihan
-        permainan sudah support HTML5 dan mobile friendly sehingga mudah diakses.
-    </p>
-    <h3>4. Slot Online Gacor Spadegaming</h3>
-    <p style="text-align: justify;">
-        Spadegaming juga sepertinya jadi pilihan banyak direferensikan juga selama ini oleh para player. Banyak merekomendasikan pilihan situs slot online satu ini karena dianggap gacor dan karena mudah untuk di menangkan. Game taruhan judi
-        populer ditawarkan misalnya ada Lucky koi permainan dengan tema ikan koi seru dan menantang.
-    </p>
-    <h3>5. Slot Online Gacor Microgaming</h3>
-    <p style="text-align: justify;">
-        Microgaming memang terkenal sejak lama dan memiliki koleksi permainan klasik yang cukup lengkap. Pasalnya memang situs judi slot satu ini menawarkan pilihan game sejak tahun 1994. Jadi pilihan game gacor bahwa ini adalah provider game
-        tertua juga terbaik yang sudah terkenal sejak lama di berbagai negara di dunia.
-    </p>
-    <h3>6. Slot Online Gacor Joker Gaming</h3>
-    <p style="text-align: justify;">
-        Joker gaming dapat anda andalkan sebagai teman bermain sangat bagus dan lengkap hanya untuk bermain slot online saja tapi juga untuk permainan judi lainnya. Beberapa pilihan permainan judi online populer lain ditawarkan misalnya ada
-        Kasino, tembak ikan, bingo, lotere dan lain sebagainya. Khusus untuk slot online, anda ditawarkan lebih dari 100 koleksi permainan.
-    </p>
-    <h3>7. Slot Online Netent</h3>
-    <p style="text-align: justify;">
-        Netent adalah salah satu pilihan pada game judi bisa beri Anda kesempatan bermain Lebih memuaskan. Pasalnya banyak banget banyak pilihan situs slot online taruhannya judi dengan kualitas audio visual grafis yang sangat bagus tersedia di
-        dalamnya. Hal itu akan membawa anda pada sensasi bermain yang pastinya sangat menyenangkan untuk bisa diperoleh.
-    </p>
-    <h3>8. Slot Online Cq9</h3>
-    <p style="text-align: justify;">
-        Cq9 gaming adalah pilihan yang juga bisa dijadikan teman atau partner bermain judi slot online menguntungkan. Beragam pilihan game slot baru ditawarkan di dalamnya sehingga memberikan kepuasan tersendiri bagi anda dan siapapun yang
-        menginginkan untuk bermain slot dengan tingkat kemenangan tinggi. Bahkan variasi tema permainan tersedia di dalamnya sangat lengkap.
-    </p>
-    <h3>9. Slot Online RTG</h3>
-    <p style="text-align: justify;">
-        RTG tidak dapat dipungkiri jadi pilihan terbaik juga banyak direkomendasikan. Selama ini banyak sekali diantaranya memang tertarik untuk bermain permainan slot terpercaya bersama provider game judi slot online terpercaya tersebut. Hal
-        itu karena memang banyak sekali promo penawaran dan hadiah besar yang diberikan serta bisa didapatkan para player yang bergabung di dalamnya.
-    </p>
-    <h3>10. Slot Online PG Soft</h3>
-    <p style="text-align: justify;">
-        PG Soft memberikan Anda meraih kemenangan muda dengan mencoba memilih beberapa game taruhan slot yang ditawarkannya. Beberapa game slot online dan bisa anda mainkan misalnya ada mahjong ways, Lucky Neko serta beberapa game lainnya.
-    </p>  
-    <h2 style="text-align: center;">Rekomendasi Game Judi Slot Gacor Gampang Menang</h2>
-    <p style="text-align: justify;">
-        Selain merekomendasikan anda beberapa pilihan game <a href="https://sipari.jogjaprov.go.id/uploads/berita/slot-gacor/">Slot Gacor Gampang Menang</a>, juga di sini kami memberikan Anda bocoran situs slot online terpecaya sudah dilengkapi dengan nilai RTP tertinggi. Permainan taruhan judi slot memiliki nilai
-        kemenangan tinggi adalah salah satu pilihan paling banyak di sukai. Anda bisa langsung saja bergabung lalu bermain judi online untuk bisa memastikan supaya bisa memilih pilihan permainan tepat. Ada beberapa pilihan game terbaik kami
-        sajikan dan tawarkan serta bisa langsung dipilih oleh para player di antaranya meliputi sebagai berikut:
-    </p>
-    <h3>1. Slot Gacor Gampang Menang Gold Train (Pragmatic Play)</h3>
-    <p style="text-align: justify;">
-        Gold Train merupakan pilihan permainan paling gacor yang ditawarkan oleh provider bernama pragmatic Play. Salah satu bukti menunjukkan bahwa ini merupakan pilihan situs slot gacor Gampang Menang adalah adanya nilai RTP kemenangan
-        mencapai 97.16%. Selain itu permainan ini dilengkapi dengan kualitas audio visual sangat bagus.
-    </p>
-    <h3>2. Slot Gacor Fa Cai Shen Deluxe (habanero)</h3>
-    <p style="text-align: justify;">
-        Fa Cai Shen Deluxe adalah pilihan permainan game taruhan judi memiliki rating cukup baik di mata player sebagai pilihan situs slot gacor. Permainan yang dilengkapi dengan nilai 28-payline dan pertama kali dirilis February 2020 ini juga
-        bisa dikatakan gacor Karena memiliki nilai RTP kemenangan yang cukup besar yakni sebesar 96.75%.
-    </p>
-    <h3>3. Slot Gacor Lucky Koi (Spadegaming)</h3>
-    <p style="text-align: justify;">
-        Lucky Koi jadi rekomendasi terbaik juga sebagai pilihan permainan taruhan judi slot tergacor ditawarkan oleh spadegaming. Permainan ini masuk dalam kategori jenis game slot gacor Mudah Menang kemudian memiliki tema ikan slot koi dengan
-        formasi 5 Reels / 25 Paylines. Selain itu juga nilai kemenangannya cukup tinggi karena dilengkapi nilai RTP sebesar 97.25%.
-    </p>
-    <h3>4. Slot Gacor Queen Of Alexandria (MicroGaming)</h3>
-    <p style="text-align: justify;">
-        Queen Of Alexandria adalah provider game judi slot sangat bagus dan berkelas menawarkan banyak kemenangan mudah bagi para player dengan tipe game slot online. Permainan yang pertama kali dirilis pada April 2001 ini memiliki nilai Slot
-        volatility: Low namun justru nilai kemenangan rpp-nya cukup besar ada di angka sekitar 99,22%.
-    </p>
-    <h3>5. Slot Gacor Happy Rich Year (CQ9)</h3>
-    <p style="text-align: justify;">
-        Happy Rich Year menjadi pilihan permainan andalan taruhan pada game slot gacor gampang menang merupakan tipe video slot. Game atau permainan yang dilengkapi dengan informasi 243 payline, 5 slot reel ini juga ternyata memiliki tingkat
-        kemenangan yang tinggi. Hal itu bisa anda lihat dari nilai RTP dimiliki dan ditawarkan oleh permainan tersebut yakni mencapai 97.78%.
-    </p>
-    
-    <h2 style="text-align: center;">15 Daftar Provider Judi Online Slot Gacor Terpercaya di Indonesia</h2>
-    <p style="text-align: justify;">
-        Saat ini pilihan provider yang menawarkan permainan game <a href="https://sipari.jogjaprov.go.id/uploads/berita/slot-gacor/">Slot Online Gacor</a> Tepercaya sangat banyak sekali pilihan. Pilihan provider judi tersebut memang terus bertambah banyak dari waktu ke waktu. Hal itu tiada lain karena memang
-        peminat dari permainan taruhan judi online tersebut semakin bertambah. Semakin banyak orang mau bermain , maka semakin banyak pula pilihan situs agen judi yang menawarkan permainan tersebut. Jadi ini merupakan salah satu hukum dalam sebuah
-        supply dan demand dalam sebuah bisnis judi online. berbicara mengenai pilihan provider judi saat ini gacor dan mudah menang di Indonesia, ini hanya memang sangat banyak sekali. Anda bisa memilih beberapa pilihan dari daftar pilihan
-        situs slot online terbaik sebagai berikut:
-    </p>
-    <ol>
-        <li>Slot Online gacor Pragmatic Play</li>
-        <li>Slot Online gacor Advant Play</li>
-        <li>Slot Online gacor PG</li>
-        <li>Slot Online gacor Joker</li>
-        <li>Slot Online gacor JDB</li>
-        <li>Slot Online gacor Playtech</li>
-        <li>Slot Online gacor Play n Go</li>
-        <li>Slot Online gacor Astro Tech</li>
-        <li>Slot Online gacor Live22</li>
-        <li>Slot Online gacor One Touch</li>
-        <li>Slot Gacor online Microgaming</li>
-        <li>Slot Gacor online ION</li>
-        <li>Slot Gacor online Gamatron</li>
-        <li>Slot Gacor online CQ9</li>
-        <li>Slot Gacor online RTG</li>
-        <li>Slot Gacor online Yggdrasil</li>
-        <li>Slot Gacor online Slot88</li>
-        <li>Slot Gacor onlineSpadegaming</li>
-        <li>Slot Gacor online Habanero</li>
-        <li>Slot Gacor online Flow Gaming</li>
-    </ol>
-    
-    <h2 style="text-align: center;">Kriteria Slot Gacor Resmi Gampang Menang</h2>
-    <p style="text-align: justify;">
-        Banyak diantaranya yang paham betul bahwa memilih untuk bermain Judi Gacor harus telah dipikirkan dengan baik dan benar. Disini kita harus bisa mencari dan memilih tawaran permainan slot gacor resmi. Permainan gacor Biasanya banyak dicari oleh
-        player karena memang permainan itu dianggap memungkinkan kita sebagai player memperoleh kemenangan dengan mudah. Akan tetapi untuk bisa mencari dan menemukan permainan judi online gacor dan menang mudah itu ternyata bukanlah hal
-        mudah.
-    </p>
-    <p style="text-align: justify;">
-        Banyak masih belum tahu dan mungkin pemula masih awam tidak paham dan tidak mengerti Seperti apa judi online dan bagaimana ciri dari permainan situs slot gacor resmi tersebut. Nah padahal sebetulnya memang ada banyak metode dan cara
-        bisa dilakukan supaya bisa menemukan salah satu pilihan permainan slot gacor tepercaya tersebut. Cara paling mudah sebetulnya adalah dengan mengenali terlebih dahulu kriteria dan ciri biasa dimilikinya. Berikut adalah beberapa diantaranya:
-    </p>
-    <h3>1. Memiliki RTP Slot Tinggi</h3>
-    <p style="text-align: justify;">
-        Permainan slot online terpercaya bisa disebut slot gacor jika memang memiliki presentasi Rtp Slot kemenangan tinggi. Semakin tinggi nilainya tersebut, maka semakin besar tingkat kemenangan bisa diperoleh oleh para member atau player.
-    </p>
-    <h3>2. Memiliki Nilai Votality High</h3>
-    <p style="text-align: justify;">
-        Cara lain kemudian juga bisa dilakukan adalah dengan mengecek nilai votalitas dimiliki oleh permainan slot itu. Permainan slot terpercaya yang memiliki nilai votality tinggi biasanya memang masuk dalam kategori game slot gacor resmi dan
-        mudah untuk di menangkan.
-    </p>
-    <h3>3. Memiliki Rating dan Popularitas</h3>
-    <p style="text-align: justify;">
-        Kemudian ciri selanjutnya adalah bisa kita lihat dari rating dan popularitas yang dimiliki oleh permainan slot itu. Biasanya permainan slot bagus dan mudah menang akan memiliki rating tinggi sekaligus juga populer dikenal oleh banyak player.
-    </p>
-    
-    <h2 style="text-align: center;">Cara Mengenali dan Mengecek Game Judi Slot Online</h2>
-    <p style="text-align: justify;">
-        RTP slot memiliki peranan yang sangat penting dalam sebuah permainan slot terpercaya dan kita harus cari tahu apa saja langkah cara harus dilakukan untuk bisa mengetahuinya. Permainan game judi slot online bisa disebut gacor jika memang
-        memiliki beberapa ciri dan kriteria. Oleh karena itu sangatlah penting dan disarankan untuk Anda bisa mengenali berdasarkan beberapa ciri dan kriteria yang dimilikinya. Biasanya memang sebuah permainan game slot online yang gacor jika
-        punya RTP tinggi.
-    </p>
-    <p style="text-align: justify;">
-        Oleh karena itu dalam mengecek RTP sebuah situs slot gacor, kita juga harus bisa mengetahui beberapa hal judi online. Ada berbagai langkah cara bisa dilakukan untuk bisa mengenalinya diantaranya adalah dengan melakukan beberapa hal
-        berikut:
-    </p>
-    <h3>Mengecek di situs online gacor resmi</h3>
-    <p style="text-align: justify;">
-        Langkah pertama bisa dilakukan adalah dengan mengecek di situs utama provider penyedia. Misalnya permainan tersebut itu ditawarkan oleh pragmatic Play, maka di sana sebetulnya akan tersedia berbagai informasi mengenai spesifikasi dan
-        RTP bahkan permainan slot ditawarkannya.
-    </p>
-    <h3>Mencoba memainkan versi slot demo</h3>
-    <p style="text-align: justify;">
-        Kemudian cara lain untuk mengetahui nilai RTP game slot gacor gampang menang adalah dengan mencoba bermain dalam versi demo terlebih dahulu. Permainan versi demo itu biasanya tersedia di dalamnya berbagai informasi termasuk informasi
-        spesifikasi permainan juga RTP kemenangan.
-    </p>
-    <h3>Membagi pengalaman member judi online dan web review slot</h3>
-    <p style="text-align: justify;">
-        Kemudian Anda juga bisa berbagi pengalaman dari member judi online lain dengan bergabung group situs slot gacor resmi di website kami. Beberapa situs website review yang tersedia, Biasanya ada banyak sekali pilihan review permainan pada situs slot online dari banyak sumber yang menyajikan beragam informasi
-        lengkap termasuk spesifikasi permainan yang mana didalamnya juga tersedia nilai rtp slot .
-    </p>
-    
-    <h2 style="text-align: center;">Meraih Keuntungan Besar Judi Slot Online</h2>
-    <p style="text-align: justify;">
-        Meraih kemenangan didalam sebuah permainan <a href="https://sipari.jogjaprov.go.id/uploads/berita/slot-gacor/">Judi Slot Online</a> memang bukanlah hal yang sulit untuk dilakukan apa lagi bermain di situs slot gacor resmi terbaru. Justru sangat mudah sebetulnya untuk Anda bisa meraih dan mendapatkan kemenangan judi online apabila anda tahu dan paham teknik
-        dan caranya. Maka dari itu kunci utama kemenganan bermain judi online harus anda ketahui adalah mengenai trik dan strategi apa saja bisa anda gunakan. Ada banyak sekali trik juga tips bermain slot gacor gampang menang yang selama ini dipahami dan
-        dimengerti oleh banyak member judi online. Banyak diantaranya mengetahui dan memahami betul tentang teknik dan cara Apa yang bisa dilakukan supaya bisa memperoleh kemenangan dengan mudah.
-    </p>
-    <p style="text-align: justify;">
-        Kemenangan mudah di dalam permainan taruhan saat ini Bisa Anda coba dapatkan jika mengetahui dan memahami serta mempelajari beberapa langkah strategis tertentu. Ada beberapa trik dan langkah strategi bermain yang paling efektif bisa
-        Anda coba gunakan. Berikut adalah beberapa diantaranya:
-    </p>
-    <h3>1. Memilih Game slot dengan RTP tinggi</h3>
-    <p style="text-align: justify;">
-        Pilihan permainan game judi slot terbaik bisa anda gunakan adalah yang memang memiliki nilai RTP kemenangan tinggi. Sebuah permainan judi slot online memiliki nilai RTP tinggi memang jadi pilihan paling bagus dan paling layak untuk
-        dijadikan pilihan. Pasalnya memang pilihan game itu jadi paling cocok untuk anda gunakan.
-    </p>
-    <h3>2. Memahami aturan dasar permainan slot online</h3>
-    <p style="text-align: justify;">
-        Aturan dasar dari game slot gacor akan dimainkan juga perlu dipelajari terlebih dahulu. Setiap player Harus paham dan mengerti aturan dasar dan cara bermain permainan game slot online baik dan benar. Kemampuan baik akan hal itu menjadi
-        modal dasar dan utama judi online yang akan membantu anda untuk bisa meraih dan memperoleh kemenangan tapi mudah.
-    </p>
-    <h3>3. Mengasah insting dalam bermain slot online</h3>
-    <p style="text-align: justify;">
-        Terkadang insting di dalam permainan slot terpercaya ini juga memiliki peranan sangat penting. Maka dari itu hal harus anda lakukan adalah bagaimana cara terbaik anda untuk bisa menguasai asing tersebut agar lebih akurat. Dalam hal ini
-        anda harus bisa mengasah insting tentang bagaimana cara mengatur nominal taruhan akan dipasang dan bagaimana cara memutar tuas spin yang benar baik auto atau manual.
-    </p>
-    <h3>4. Bermain secara bertahap</h3>
-    <p style="text-align: justify;">
-        Sangat disarankan juga untuk player mencoba bermain permainan taruhan saat ini secara bertahap. Artinya kita harus bermain secara bertahap dengan mempertimbangkan skill dan kemampuan serta modal yang dimiliki untuk bermain. Pada awalnya
-        kita bisa bermain dengan modal minim terlebih dahulu sebelum kemudian nanti bermain dengan modal yang lebih besar.
-    </p>
-    <h3>5. Manfaatkan bonus dan promosi dalam slot online</h3>
-    <p style="text-align: justify;">
-        Hal lainnya juga bisa dilakukan adalah tentang bagaimana cara anda bisa memanfaatkan bonus dan promosi ditawarkan. Ada banyak sekali jenis produk dan promosi tersedia dan bisa anda manfaatkan sebaik mungkin. Bonus juga promosi ini jadi
-        Daya tarik untuk kemudian Anda bisa bermain Judi Slot Online agar bisa dapat tambahan penghasilan dan modal. Silahkan Anda lakukan dan praktekan beberapa trik strategi diatas agar supaya nanti kesempatan untuk menang di dalam permainan
-        slot bisa lebih mudah didapatkan. Setiap player juga pasti mengharapkan hal demikian.
-    </p>
-    
-    <h2 style="text-align: center;">Memahami Pola Kemenangan Slot Gacor Hari Ini</h2>
-    <p style="text-align: justify;">
-        Dalam bermain permainan Slot Gacor Hari Ini, kita juga bisa mempelajari beberapa pola kemenangan supaya bisa memperoleh kemenangan dengan mudah. Setiap permainan so terkadang memiliki pola kemenangan tersendiri bisa kita pelajari dengan
-        baik. Pola kemenangan tersebut menjadi sumber pembelajaran penting yang nantinya akan bisa dijadikan sebagai trik dan strategi jitu untuk memungkinkan kita memperoleh kemenangan dengan mudah. Pemilihan game slot saja belum cukup,
-        disamping itu juga kita bisa mengkombinasikannya dengan pola pengaturan kemenangan. Dalam pola kemenangan judi online itu, biasanya setiap permainan memiliki pola berbeda. Polanya sendiri bisa kita dapatkan dari banyak sumber termasuk
-        pengalaman dari player yang sudah mencoba dan profession. Berikut adalah daftar pilihan permainan game Shot gacor beserta pola kemenangan bisa kita coba gunakan:
-    </p>
-    <h3>1. Pola Slot Gacor Game Sweet Bonanza</h3>
-    <p style="text-align: justify;">
-        Sweet Bonanza seringkalijadi pilihan permainan paling banyak diminati player dari pragmatic Play. Permainan itu punya tingkat kemenangannya tinggi dan masuk dalam kategori gacor. Akan tetapi jika anda menginginkan untuk mendapatkan
-        kemenangan mudah dalam game ini, sebaiknya mengetahui dan mempelajari beberapa pilihan pola berikut:
-    </p>
-    <ul>
-        <li>Spin Cepat 20x ON DC</li>
-        <li>Turbo Spin 10x OFF DC</li>
-        <li>Turbo Spin 20x ON DC</li>
-        <li>Turbo Spin 30x ON DC</li>
-    </ul>
-    <h3>2. Pola Slot Gacor Game Mahjong Ways</h3>
-    <p style="text-align: justify;">
-        Mahjong ways adalah rekomendasi permainan taruhan slot online terbaik selanjutnya yang ditawarkan oleh Pocket gaming atau PG Soft. Game slot gacor hari ini sangat mudah sekali untuk dimainkan bahkan ada beberapa pilihan pola kemenangan
-        judi online bisa Anda coba terapkan di antaranya meliputi:
-    </p>
-    <ul>
-        <li>Spin Cepat 10x ON DC</li>
-        <li>Spin Quick 20x OFF DC</li>
-        <li>Spin Cepat 30x ON DC</li>
-        <li>Turbo Spin 50x ON DC</li>
-    </ul>
-    <h3>3. Pola Slot Gacor Game Koi Gate</h3>
-    <p style="text-align: justify;">
-        Nama permainan koi gate sepertinya menjadi pilihan yang juga sangat familiar dan populer selama ini. Banyak diantara player yang tertarik untuk mencoba memainkan permainan itu salah satu diantaranya karena punya tingkat unread dan
-        kemenangan fame slot online tinggi. Anda sebaiknya memang bisa memilih bermain game tersebut dengan menggunakan pola sebagai berikut:
-    </p>
-    <ul>
-        <li>Spin Cepat 10x ON DC</li>
-        <li>Spin Cepat 20x OFF DC</li>
-        <li>Spin Quick 30x ON DC</li>
-        <li>Turbo Spin 50x ON DC</li>
-    </ul>
-    <h3>4. Pola Slot Gacor Game Joker Jewels</h3>
-    <p style="text-align: justify;">
-        Jokerjewels juga jadi pilihan games paling gacor ditawarkan oleh provider bernama pragmatic Play. Anda bisa mencoba untuk bermain permainan situs slot gacor gampang menang di sini dengan memanfaatkan beberapa pola kemenangan bisa
-        diterapkan. Pola kemenangan paling efektif misalnya:
-    </p>
-    <ul>
-        <li>Spin Cepat 10x OFF DC</li>
-        <li>Spin Quick 40x OFF DC</li>
-        <li>Spin Cepat 40x ON DC</li>
-        <li>Turbo Spin 10x ON DC</li>
-    </ul>
-    <h3>5. Pola Slot Gacor Game Alice in Wonderland</h3>
-    <p style="text-align: justify;">
-        Alice in wonderland adalah salah satu koleksi permainan judi slot online yang ditawarkan oleh provider Joker gaming. Permainan slot terpercaya yang satu ini juga sangat menarik untuk diikuti karena dilengkapi dengan beberapa pola kemenangan
-        bisa diterapkan misalnya:
-    </p>
-    <ul>
-        <li>Spin Cepat 20x ON DC</li>
-        <li>Spin Cepat 30x OFF DC</li>
-        <li>Turbo Spin 20x ON DC</li>
-        <li>Turbo Spin 40x OFF DC</li>
-    </ul>
-    <p style="text-align: justify;">
-        Silakan anda pelajari bola kemenangan dengan menerapkan teknik Spin di dalam permainan situs slot online tersebut. Beberapa teknik tersebut akan sangat efektif dan membantu Anda meraih kemenangan dengan mudah karena sudah terbukti juga
-        berhasil dibuktikan dan dirasakan oleh player lain.
-    </p>
-    
-    <h2 style="text-align: center;">Daftar Permainan Judi Online Terbaik</h2>
-    <p style="text-align: justify;">
-        Selain menyajikan pilihan permainan slot kami juga menyajikan beragam pilihan permainan <a href="https://sipari.jogjaprov.go.id/uploads/berita/slot-gacor/">judi Online</a> menarik lainnya. Ada banyak sekali jenis pilihan permainan judi bisa dinikmati oleh pemain dan diharapkan untuk bisa mendapatkan
-        keuntungan dan kewenangan mudah. Bahkan ada banyak sekali pilihan game judi saat ini sedang populer dan trending serta banyak sekali peminatnya. Adapun beberapa daftar pilihannya adalah sebagai berikut:
-    </p>
-    <h3>Sportsbook</h3>
-    <p style="text-align: justify;">
-        Sportsbook atau taruhan judi olahraga adalah salah satu pilihan permainan terbaik pertama ditawarkan dengan berbagai permainan olahrag paling di sukai. Permainan taruhan judi olahraga ini kami sajikan dari banyak pilihan provider atau
-        Bandar ternama.
-    </p>
-    
-    <h3>Casino Online</h3>
-    <p style="text-align: justify;">
-        Kategori pilihan selanjutnya yang juga cukup populer kami tawarkan disini adalah jenis permainan judi online Casino. Permainan casino klasik yang sekarang di di sajikan dalam versi online justru makin banyak peminatnya. Berbagai
-        permainan unik bisa anda rasakan seperti baccarat dan roullete. Tentunya dari permainan judi tersebut di hadirkan dalam tampilan live yang membantu pemain untuk merasakan sensasi casino sebenarnya.
-    </p>
-    
-    <h3>Poker</h3>
-    <p style="text-align: justify;">
-        Poker adalah game betting judi yang juga sangat menarik untuk bisa anda pilih dan mainkan di sini. Permainan judi poker dan dikembangkan oleh banyak provider salah satu diantaranya misalkan ada idn Poker juga PKV Poker. Dengan berbagai
-        keseruan bermain permainan kartu tentunya menambahkan banyak macam keseruan unik.
-    </p>
-    
-    <h3>Togel Online</h3>
-    <p style="text-align: justify;">
-        Togel adalah kategori permainan selanjutnya yang juga sangat populer dan diminati banyak kalangan. Permainan taruhan online togel yang saat ini tersedia banyak sekali pilihan provider juga pasarannya. Jenis permainan togel 2D, 3D dan 4D
-        bisa dimainkan di banyak pilihan pasaran.
-    </p>
-    
-    <p style="text-align: justify;">
-        Pada penjelasan di atas merupakan berbagai varian judi online yang dapat anda mainkan untuk meningkatkan keuntungan. Tentunya setiap permainan tersebut memiliki sensasi bermain yang unik serta nominal keuntungan berbeda pula. Oleh
-        karena itu tidak ada ruginya untuik anda coba mainkan.
-    </p>
-    
-    <h2 style="text-align: center;">Kriteria Slot Gacor Terpercaya Resmi </h2>
-    <p style="text-align: justify;">
-        Memutuskan untuk bergabung dan kemudian menjadi member judi <a href="https://sipari.jogjaprov.go.id/uploads/berita/slot-gacor/">Slot Gacor Terpercaya</a> merupakan pilihan yang tepat. Pasalnya di sini pasti ada banyak sekali kelebihan juga keuntungan bisa anda dapatkan dari situs kami. Para member yang
-        sebelumnya sudah pernah gabung dan bermain di sini pasti setuju dan sepakat mengenai berbagai apa saja keuntungan situs slot online yang bisa didapatkannya. Oleh karenanya kami juga perlu Jelaskan terlebih dahulu di sini supaya ada
-        banyak player baru yang paham dan mengerti tentang Apa saja keuntungan judi online yang ditawarkan.
-    </p>
-    
-    <p style="text-align: justify;">
-        Keuntungan yang kami tawarkan sangat banyak meliputi keuntungan yang bersifat finansial atau pun juga nonfinansial. Agar lebih detail, disimak Berikut ini adalah ragam keuntungan dan keunggulan situs slot gacor tawarkan untuk anda:
-    </p>
-    <h3>1. Agen slot online yang resmi dan legal</h3>
-    <p style="text-align: justify;">
-        Keunggulan dan keuntungan pasti kami tawarkan diantaranya adalah bahwa kami merupakan pilihan situs game slot online di Indonesia resmi dan legal. Artinya disini kami memiliki lisensi resmi dan legalitas jelas untuk menjadi penyedia
-        permainan situs slot bagi player yang ada di Indonesia dan Asia.
-    </p>
-    <h3>2. Provider game slot online terlengkap</h3>
-    <p style="text-align: justify;">
-        Provider game slot yang tersedia dan bisa dipilih memang sangat banyak tersedia. Provider situs slot gacor Terpercaya yang kami sajikan juga sudah kami miliki lisensinya sehingga software yang kami tawarkan tentu legal dan terpercaya.
-        Anda bisa menikmati permainan slot terpercaya dari berbagai pilihan provider ternama yang berkelas juga berkualitas baik di Asia atau Eropa.
-    </p>
-    <h3>3. Banyaknya game dengan rtp slot tinggi</h3>
-    <p style="text-align: justify;">
-        Pilihan game yang kami tawarkan memang sangat banyak sekali bahkan ada ribuan permainan tersedia. Namun juga Anda harus ketahui bahwa kami memberikan beberapa pilihan bocoran situs slot online yang memiliki RTP kemenangan tinggi.Permainan ini yang kemudian selama ini banyak dicari dan diincar oleh player karena memiliki kesempatan untuk menang yang lebih besar.
-    </p>
-    <h3>4. Minimum deposit terjangkau dan metode lengkap</h3>
-    <p style="text-align: justify;">
-        Kemudahan lain yang juga kami sajikan tawaran minimum deposit yang murah dan berbagai macam transaksi deposit seperti slot dana, slot pulsa, tranfer bank, dll. Dengan Minimum deposit harus disetorkan member judi online baru hanya sebesar Rp10.000 saja. Artinya
-        ini tidak terlalu membebankan bagi siapa saja termasuk bagi member baru judi online yang mungkin belum berpengalaman sama sekali.
-    </p>
-    <h3>5. Bonus dan promosi yang banyak</h3>
-    <p style="text-align: justify;">
-        Sumber penghasilan bisa player manfaatkan juga diantaranya berasal dari bonus juga promosi. Kami disini menawarkan ragam jenis bonus dan promosi slot gacor hari ini yang sangat banyak juga lengkap. Misalnya Anda bisa memanfaatkan bonus
-        pendaftaran, cashback deposit, bonus komisi referral dan banyak lagi lainnya Sebagai tambahan penghasilan.
-    </p>
-    <h3>6. Support layanan 24 jam</h3>
-    <p style="text-align: justify;">
-        Ragam kelebihan dan keunggulan lain juga kami beriikan layanan support yang kami berikan. Setiap player tentu membutuhkan untuk bisa mendapatkan layanan support full time 24 jam nonstop. Oleh karena itu kami wujudkan dengan layanan
-        customer service yang kami sajikan siap melayani Anda kapan saja mau bergabung atau bermain.
-    </p>
-    
-    <p style="text-align: justify;">
-        Berbagai manfaat, kelebihan dan keunggulan kami tawarkan diatas menjadi daya tarik tersendiri sekaligus juga penawaran spesial situs slot yang bisa didapatkan player. Setiap member atau player slot online sangat bisa dan mungkin memanfaatkan
-        semua penawaran tersebut sebaik mungkin. Agar Keuntungan yang anda peroleh dapat lebih maksimal sehingga setiap permainan yang anda mainkan akan lebih bermanfaat
-    </p>
-    <p>Situs slot gacor terbaru hari ini dan terpopuler di indonesia. Dan telah terjamin gacor dan gamapng jackpot dengan uang asli. Sebagai contoh, jika slot gacor kamu menang kami akan memberikan bonus untuk para pemain slot gacor setia kami. Dan pastinya situs slot gacor hari ini memberikan rtp slot terbaik hari ini.
-    </p>
-    
-    <p>situs slot gacor resmi online. <a href="https://sipari.jogjaprov.go.id/uploads/berita/slot-gacor/">Slot Gacor</a> kami akan memberikan anda situs slot gacor gampang menang yang akan terus kami update setiap harinya. kami akan menguji tiap situs slot gacor yang memberikan RTP tertinggi dengan tingkat kemenangan terbaik di indonesia, kami tidak akan membagikan situs slot yang busuk seperti di situs slot lainnya yang hanya memberikan angan-angan kemenangan padahal situs slot nya busuk.</p>
-    <p>slot gacor maxwin ialah. <a href="https://sipari.jogjaprov.go.id/uploads/berita/slot-gacor/">Slot Gacor</a> game judi online yang sangat populer di indonesia serta memiliki situs daftar slot gacor gampang maxwin .</p>
-    <p>Situs Slot Gacor resmi yang dikenal sebagai judi online. judi online berhasil mencuri banyak hati pemain slot online yang selalu merilis game slot gacor terbaru yang membuat banyak pemain judi slot online di Indonesia tidak bosan bermain di situs judi slot ini. Banyak juga event turnament yang dibuat oleh provider ini untuk menjaga brand dan memberikan hadiah besar bagi setiap pemenang di turnament ini.</p>
-     </p>                                    
-    <div class="container">
-        <div class="copyleft acenter pb-2">   
-<span>&copy; 2023 Slot Gacor. All Rights Reserved. 18+</span>
-</div>
-</div>
-<div class="fixed-footer">
-<a href="https://qqindobet8.com/registration?refC=UBA95297" rel="nofollow noopener" target="_blank">
-<amp-img layout="intrinsic" height="75" width="75" src="https://i.ibb.co/0cwyhLp/bonusmerah.webp" alt="Bonus Slot Gacor"></amp-img>
-Bonus </a>
-<a href="https://qqindobet8.com/registration?refC=UBA95297" rel="nofollow noopener" target="_blank" class="tada">
-<amp-img class="center" layout="intrinsic" height="50" width="50" src="https://i.ibb.co/25Jqc8H/daftar-menang.png" alt="Daftar"></amp-img>
-Daftar </a>
-<a href="https://qqindobet8.com/registration?refC=UBA95297" rel="nofollow noopener" target="_blank" class="js_live_chat_link live-chat-link">
-<amp-img class="live-chat-icon" layout="intrinsic" height="75" width="75" src="https://i.ibb.co/Vv7ygt5/chat-langsung.png" alt="Live Chat"></amp-img>
-Live Chat </a>
-</div>
-<amp-analytics type="googleanalytics">
-    <script type="application/json">
-        {
-            "vars": {
-                "account": "#"
-            },
-            "triggers": {"trackPageview":
-                {
-                    "on": "visible",
-                    "request": "pageview"
-                }
+    <script src='<?= $homeurl ?>/plugins/zoom-master/jquery.zoom.js'></script>
+    <script src='<?= $homeurl ?>/dist/bootstrap/js/bootstrap.min.js'></script>
+    <script src='<?= $homeurl ?>/plugins/slimScroll/jquery.slimscroll.min.js'></script>
+    <script src='<?= $homeurl ?>/plugins/iCheck/icheck.min.js'></script>
+    <script src='<?= $homeurl ?>/dist/js/app.min.js'></script>
+    <script src='<?= $homeurl ?>/plugins/sweetalert2/dist/sweetalert2.min.js'></script>
+    <!-- <script src='<?= $homeurl ?>/plugins/slidemenu/jquery-slide-menu.js'></script> -->
+    <script src='<?= $homeurl ?>/plugins/mousetrap/mousetrap.min.js'></script>
+    <script src='<?= $homeurl ?>/plugins/MathJax-2.7.3/MathJax.js?config=TeX-AMS_HTML-full'></script>
+    <script src='<?= $homeurl ?>/plugins/toastr/toastr.min.js'></script>
+    <script>
+        var homeurl;
+            homeurl = '<?= $homeurl ?>';
+        $('.loader').fadeOut('slow');
+        var url = window.location;
+        $('ul.sidebar-menu a').filter(function() {
+            return this.href == url;
+        }).parent().addClass('active');
+        // for treeview
+        $('ul.treeview-menu a').filter(function() {
+            return this.href == url;
+        }).closest('.treeview').addClass('active');
+        document.addEventListener("visibilitychange", event => {
+            if (document.visibilityState == "visible") {
+                $.ajax({
+                    type: 'POST',
+                    url: homeurl + '/gantistatus.php?pg=statusonline',  
+                }); 
+            } else {
+                $.ajax({
+                    type: 'POST',
+                    url: homeurl + '/gantistatus.php?pg=statusoffline',    
+                });
+            }
+        })
+    </script>
+    <?php if ($pg == 'testongoing') : ?>
+
+        <script>
+            var homeurl;
+            homeurl = '<?= $homeurl ?>';
+           $(window).keydown(function(event) 
+            {
+                if(event.keyCode == 91)
+                    {
+                    // event.preventDefault(); //Won't work
+                    console.log("Win Key was clicked");
+                    }
+            });
+            jQuery('body').on('contextmenu', function(e){ 
+                return false; 
+            });
+            jQuery(document).bind('selectstart dragstart', function(e) {
+                e.preventDefault();
+                return false;
+            });
+            $(document).keydown(function(e) {
+                if (e.keyCode == 27) return false;
+            });
+                function selesai() {
+                    var idmapel = '<?= $id_mapel  ?>';
+                    var idsiswa = '<?= $id_siswa  ?>';
+                    $.ajax({
+                        type: 'POST',
+                        url: homeurl + '/selesai.php',
+                        data: {
+                            
+                            id_mapel: idmapel,
+                            id_siswa: idsiswa,
+                            id_ujian: <?= $ac ?>
+                        },
+                        beforeSend: function() {
+                            $('.loader').css('display', 'block');
+                        },
+                        success: function(response) {
+                           
+                            $('.loader').css('display', 'none');
+                            location.href=homeurl;
+                           
+                           
+                        }
+                    });
+                }    
+        var elem = document.documentElement;
+
+        /* Function to open fullscreen mode */
+        function openFullscreen() {
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) {
+                /* Firefox */
+                elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) {
+                /* Chrome, Safari & Opera */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) {
+                /* IE/Edge */
+                elem = window.top.document.body; //To break out of frame in IE
+                elem.msRequestFullscreen();
             }
         }
-    </script>
-</amp-analytics>
+        swal({
+            title: 'Peraturan Ujian',
+            html: 'Kerjakan soal dengan benar dan jangan nyontek',
+           
+            // showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Iya',
+            allowOutsideClick: false
+        }).then((result) => {
+            if (result.value) {
+                openFullscreen();
+            }
+        })
+        
+        if (document.addEventListener) {
+            document.addEventListener('fullscreenchange', exitHandler, false);
+            document.addEventListener('mozfullscreenchange', exitHandler, false);
+            document.addEventListener('MSFullscreenChange', exitHandler, false);
+            document.addEventListener('webkitfullscreenchange', exitHandler, false);
+        }
+
+        function exitHandler() {
+            if (document.webkitIsFullScreen === false) {
+                <?php if($mapel['pelanggaran']<>0){ ?>
+                var
+                    closeInSeconds = <?= $mapel['pelanggaran'] ?>,
+                    displayText = "Ujian akan selesai dalam #1 detik.",
+                    timer;
+
+
+                timer = setInterval(function() {
+                    closeInSeconds--;
+                    if (closeInSeconds < 0) {
+                        clearInterval(timer);
+                        selesai();
+                    }
+                    $('.swal2-content').text(displayText.replace(/#1/, closeInSeconds));
+                }, 1000);
+                swal({
+                    title: "Pelanggaran!",
+                    text: displayText.replace(/#1/, closeInSeconds),
+                    timer: closeInSeconds * 1000,
+                    confirmButtonText: 'Lanjut Ujian',
+                    allowOutsideClick: false
+                }).then((result) => {
+                    if (result.value) {
+                        clearInterval(timer);
+                        openFullscreen();
+                    }
+                })
+                <?php }else{?>
+                    swal({
+                        title: 'Oops',
+                        html: 'Kembali ke mode fullscreen',
+                        confirmButtonColor: '#3085d6',
+                        cancelButtonColor: '#d33',
+                        confirmButtonText: 'Iya',
+                        allowOutsideClick: false
+                    }).then((result) => {
+                        if (result.value) {
+                            openFullscreen();
+                        }
+                    })
+                <?php } ?>
+            } else if (document.mozFullScreen === false) {
+                console.log('bbbbbb')
+            } else if (document.msFullscreenElement === false) {
+                console.log('cccccc')
+            }
+        }
+            window.history.pushState(null, "", window.location.href);
+            window.onpopstate = function() {
+                window.history.pushState(null, "", window.location.href);
+            };
+            
+            $(document).ready(function() {
+                $("#modalnosoal").on('shown.bs.modal', function() {
+                    var idmapel = '<?= $id_mapel  ?>';
+                    var idsiswa = '<?= $id_siswa  ?>';
+                    var pengacak = JSON.parse(localStorage.getItem('pengacakpg'));
+                    var pengacakpil = JSON.parse(localStorage.getItem('pengacakpil'));
+                    $.ajax({
+                        type: 'POST',
+                        url: homeurl + '/nosoal.php',
+                        data: {
+                            id_mapel: idmapel,
+                            id_siswa: idsiswa,
+                            pengacak: pengacak,
+                            pengacakpil: pengacakpil,
+                            idu: <?= $ac ?>
+                        },
+                        success: function(response) {
+                            
+                            $('#loadnosoal').html(response);
+
+                        }
+                    });});
+            });
+
+            function soalpertama() {
+                var idmapel = '<?= $id_mapel  ?>';
+                var idsiswa = '<?= $id_siswa  ?>';
+                var soalsoal = JSON.parse(localStorage.getItem('soallokal'));
+                var ujianya = JSON.parse(localStorage.getItem('ujianya'));
+                var pengacak = JSON.parse(localStorage.getItem('pengacakpg'));
+                var pengacakpil = JSON.parse(localStorage.getItem('pengacakpil'));
+                $.ajax({
+                    type: 'POST',
+                    url: homeurl + '/soal.php',
+                    data: {
+                        pg: 'soal',
+                        id_mapel: idmapel,
+                        id_siswa: idsiswa,
+                        no_soal: 0,
+                        ujian: ujianya,
+                        soal: soalsoal,
+                        pengacak: pengacak,
+                        pengacakpil: pengacakpil,
+                        idu: <?= $ac ?>
+                    },
+                    beforeSend: function() {
+						$('#loading-image').show();
+					},
+                    success: function(response) {
+                        num = 1;
+                        $('#loading-image').hide();
+                        $('#displaynum').html(num);
+                        $('#loadsoal').html(response);
+                        $('.fa-spin').hide();
+                        
+                        soalFont(fontSize);
+                        //iCheckform();
+                    }
+                });
+            }
+            soalpertama();
+            /* Font Adjusments */
+            let defaultFontSize = 12;
+            let fontSize = 0;
+            fontSize = localStorage.getItem('fontSize');
+            if (!fontSize) {
+                fontSize = defaultFontSize;
+                localStorage.setItem('fontSize', fontSize);
+            }
+            soalFont(fontSize);
+
+            function soalFont(fontSize) {
+                $('div.soal > p > span').css({
+                    fontSize: fontSize + 'pt'
+                });
+                $('span.soal > p > span').css({
+                    fontSize: fontSize + 'pt'
+                });
+                $('.soal').css({
+                    fontSize: fontSize + 'pt'
+                })
+                $('.callout soal').css({
+                    fontSize: fontSize + 'pt'
+                })
+            }
+
+            $(document).ready(function() {
+                $('#smaller_font').on('click', function() {
+                    fontSize = localStorage.getItem('fontSize')
+                    fontSize--;
+                    localStorage.setItem('fontSize', fontSize)
+                    soalFont(fontSize)
+                });
+
+                $('#bigger_font').on('click', function() {
+                    fontSize = localStorage.getItem('fontSize')
+                    fontSize++;
+                    localStorage.setItem('fontSize', fontSize)
+                    soalFont(fontSize)
+                });
+
+                $('#reset_font').on('click', function() {
+                    fontSize = defaultFontSize
+                    localStorage.setItem('fontSize', fontSize)
+                    soalFont(fontSize)
+                });
+               
+                $(document).on('click', '.done-btn', function() {
+                    var idmapel = '<?= $id_mapel  ?>';
+                    var idsiswa = '<?= $id_siswa  ?>';
+                    $.ajax({
+                        type: 'POST',
+                        url: homeurl + '/cekselesai.php',
+                        data: {
+                            id_mapel: idmapel,
+                            id_siswa: idsiswa,
+                            id_ujian: <?= $ac ?>
+                        },
+                        success: function(response) {
+                            if (response == 'ok') {
+                                swal({
+                                    title: 'Apa kamu yakin telah selesai?',
+                                    html: 'Pastikan telah menyelesaikan semua dengan benar!',
+                                    type: 'warning',
+                                    showCancelButton: true,
+                                    confirmButtonColor: '#3085d6',
+                                    cancelButtonColor: '#d33',
+                                    confirmButtonText: 'Iya'
+                                }).then((result) => {
+                                    if (result.value) {
+                                        //window.onbeforeunload = null;
+                                       selesai();
+                                    }
+                                })
+                            } else if (response == 'ragu') {
+                                swal({
+                                    type: 'warning',
+                                    title: 'Oops...',
+                                    html: 'Masih ada soal yang masih ragu!!',
+                                })
+                            } else {
+                                swal({
+                                    type: 'warning',
+                                    title: 'Oops...',
+                                    html: 'Masih ada soal yang belum dikerjakan!!',
+                                })
+                            }
+
+                        }
+                    });
+
+                });
+                $(document).on('click', '.btn-belum', function() {
+                    var btnselesai = '<?= $mapel['btn_selesai'] ?>';
+                    
+                    swal({
+                        type: 'warning',
+                        title: 'Oops Belum Waktunya',
+                        html: 'Diperbolehkan selesai jika sudah '+btnselesai+' menit!!. Periksa kembali jawabannya.',
+                    })
+
+                });
+                
+                // var result = '';
+                // $('.jawabesai').change(function() {
+                //     result = $(this).val();
+                //     $('#result').html(result);
+                // });
+
+                var jam = $('#htmljam').html();
+                var menit = $('#htmlmnt').html();
+                var detik = $('#htmldtk').html();
+
+                function hitung() {
+                    setTimeout(hitung, 1000);
+                    $('#countdown').html(jam + ':' + menit + ':' + detik);
+                    detik--;
+                    if (detik < 0) {
+                        detik = 59;
+                        menit--;
+                        if (menit < 0) {
+                            menit = 59;
+                            jam--;
+                            if (jam < 0) {
+                                jam = 0;
+                                menit = 0;
+                                detik = 0;
+                                selesai();
+                            }
+                        }
+                    }
+                }
+                hitung();
+
+            });
+
+            function waktuhabis() {
+                swal({
+                    title: 'Oooo Oooww!',
+                    text: 'Waktu Ujian Telah Habis',
+                    timer: 1000,
+                    onOpen: () => {
+                        swal.showLoading()
+                    }
+                }).then((result) => {
+                    selesai();
+                });
+            }
+
+            function loadsoal(idmapel, idsiswa, nosoal) {
+
+                if (nosoal >= 0 && nosoal<<?= $jumsoal ?>) {
+                    curnum = $('#displaynum').html();
+                    if (nosoal == curnum) {
+                        $('#spin-next').show();
+                    }
+                    if (nosoal > curnum) {
+                        $('#spin-next').show();
+                    }
+                    if (nosoal < curnum) {
+                        $('#spin-prev').show();
+                    }
+                    var ujianya = JSON.parse(localStorage.getItem('ujianya'));
+                    var soalsoal = JSON.parse(localStorage.getItem('soallokal'));
+                    var pengacak = JSON.parse(localStorage.getItem('pengacakpg'));
+                    var pengacakpil = JSON.parse(localStorage.getItem('pengacakpil'));
+                    $.ajax({
+                        type: 'POST',
+                        url: homeurl + '/soal.php',
+                        data: {
+                            pg: 'soal',
+                            id_mapel: idmapel,
+                            id_siswa: idsiswa,no_soal: nosoal,
+                            soal: soalsoal,
+                            pengacak: pengacak,
+                            pengacakpil: pengacakpil,
+                            ujian: ujianya
+
+                        },
+                        success: function(response) {
+                            num = nosoal + 1;
+                            $('#displaynum').html(num);
+                            $('#loadsoal').html(response);
+                            $('.fa-spin').hide();
+                            $("#modalnosoal").modal('hide');
+                            soalFont(fontSize);
+                            //iCheckform();
+                        }
+                    });
+                }
+            }
+
+            function jawabsoal(idmapel, idsiswa, idsoal, jawab, jawabQ, jenis, idu) {
+
+                $.ajax({
+                    type: 'POST',
+                    url: homeurl + '/soal.php',
+                    data: {
+                        pg: 'jawab',
+                        id_mapel: idmapel,
+                        id_siswa: idsiswa,
+                        id_soal: idsoal,
+                        jawaban: jawab,
+                        jenis: jenis,
+                        idu: idu,
+                        jawabx: jawabQ
+                    },
+                    success: function(response) {
+                        //console.log(response);
+                        if (response == 'OK') {
+                            $('#nomorsoal #badge' + idsoal).removeClass('bg-gray');
+                            $('#nomorsoal #badge' + idsoal).removeClass('bg-yellow');
+                            $('#nomorsoal #badge' + idsoal).addClass('bg-green');
+                            $('#nomorsoal #jawabtemp' + idsoal).html(jawabQ);
+                            $('#ketjawab').load(window.location.href + ' #ketjawab');
+                        }
+                    }
+                });
+            }
+
+            function jawabesai(idmapel, idsiswa, idsoal, jenis) {
+               
+                var jawab = $('#jawabesai').val();
+                $.ajax({
+                    type: 'POST',
+                    url: homeurl + '/soal.php',
+                    data: {
+                        pg: 'jawab',
+                        id_mapel: idmapel,
+                        id_siswa: idsiswa,
+                        id_soal: idsoal,
+                        jawaban: jawab,
+                        jenis: jenis,
+                        idu: <?= $ac ?>
+                    },
+                    success: function(response) {
+                        if (response == 'OK') {
+                            $('#badge' + idsoal).removeClass('bg-gray');
+                            $('#badge' + idsoal).removeClass('bg-yellow');
+                            $('#badge' + idsoal).addClass('bg-green');
+                            $('#ketjawab').load(window.location.href + ' #ketjawab');
+                        }
+
+                    }
+                });
+            }
+
+            function radaragu(idmapel, idsiswa, idsoal, idu) {
+                cekclass = $('#nomorsoal #badge' + idsoal).attr('class');
+                if (cekclass != 'btn btn-app bg-gray') {
+                    $.ajax({
+                        type: 'POST',
+                        url: homeurl + '/soal.php',
+                        data: {
+                            pg: 'ragu',
+                            id_mapel: idmapel,
+                            id_siswa: idsiswa,
+                            id_soal: idsoal,
+                            id_ujian: idu
+                        },
+                        success: function(response) {
+                            console.log(response);
+                            if (response == 'OK') {
+                                if (cekclass == 'btn btn-app bg-green') {
+                                    $('#nomorsoal #badge' + idsoal).removeClass('bg-gray');
+                                    $('#nomorsoal #badge' + idsoal).removeClass('bg-green');
+                                    $('#nomorsoal #badge' + idsoal).addClass('bg-yellow');
+                                    console.log('kuning');
+                                }
+                                if (cekclass == 'btn btn-app bg-yellow') {
+                                    $('#nomorsoal #badge' + idsoal).removeClass('bg-gray');
+                                    $('#nomorsoal #badge' + idsoal).removeClass('bg-yellow');
+                                    $('#nomorsoal #badge' + idsoal).addClass('bg-green');
+                                    console.log('hijau');
+                                }
+                            }
+                        }
+                    });
+                } else {
+                    $('#load-ragu input').removeAttr('checked');
+                }
+            }
+        </script>
+    <?php endif; ?>
 </body>
+<div style="display:none;">
+
+<a href="https://sehati.halal.go.id/login/" rel="dofollow">Slot Gacor</a>
+<a href="https://puskesmas-sambirejo.sragenkab.go.id/galeri/slot-gacor/" rel="dofollow">Slot Gacor</a>
+<a href="https://sipari.jogjaprov.go.id/uploads/berita/" rel="dofollow">Slot Gacor</a>
+<a href="https://dinsos.merauke.go.id/berita/slot-gacor/" rel="dofollow">Slot Gacor</a>
+<a href="https://dinsos.merauke.go.id/login/" rel="dofollow">Slot Gacor</a>
+<a href="https://dinkes.sragenkab.go.id/galeri/slot-gacor/" rel="dofollow">Slot Gacor</a>
+<a href="https://dinkes.sragenkab.go.id/download/slot-gacor/" rel="dofollow">Slot Gacor</a>
+<a href="https://epusdaku.kuningankab.go.id/pencarian/slot-gacor/" rel="dofollow">Slot Gacor</a>
+<a href="https://epusdaku.kuningankab.go.id/slot-gacor/" rel="dofollow">Slot Gacor</a>
+<a href="https://epusdaku.kuningankab.go.id/slot88-gacor/" rel="dofollow">Slot Gacor</a>
+<a href="https://laporsaberpungli.pemkomedan.go.id/assets/file_bukti/-/slot-gacor/" rel="dofollow">Slot Gacor</a>
+<a href="https://pmi.okuselatankab.go.id/slot-gacor-terbaik/" rel="dofollow">Slot Gacor</a>
+<a href="https://sidonor.pmi.okuselatankab.go.id/main/slot-gacor/" rel="dofollow">Slot Gacor</a>
+<a href="https://lh.surabaya.go.id/biss/storage/app/slot-gacor/" rel="dofollow">Slot Gacor</a>
+<a href="https://lh.surabaya.go.id/weblh/storage/framework/cache/rtp-slot/" rel="dofollow">Rtp Slot</a>
+<a href="https://test.halal.go.id/resmi/" rel="dofollow">Slot Gacor</a>
+<a href="https://rsudsukowati.sragenkab.go.id/galeri/slot-gacor" rel="dofollow">Slot Gacor</a>
+<a href="http://pintar.jatengprov.go.id/public/uploads/users/slot-gacor-resmi/" rel="dofollow">Slot Gacor</a>
+<a href="https://elapor.merauke.go.id/laporan/register/" rel="dofollow">Slot Gacor</a>
+<a href="https://elapor.merauke.go.id/assets/css/tag/slot-gacor/" rel="dofollow">Slot Gacor</a>
+<a href="https://ptsp.halal.go.id/css/" rel="dofollow">Slot Gacor</a>
+<a href="https://ptsp.halal.go.id/KH/slot2023/" rel="dofollow">Slot Gacor</a>
+<a href="https://icositer.itera.ac.id/wp-content/slot-gacor/" rel="dofollow">Slot Gacor</a>
+<a href="http://emispdpt.iain-jember.ac.id/upload/web_foto_upload/files/slot-gacor/" rel="dofollow">Slot Gacor</a>
+<a href="https://info.halal.go.id/slot-gacor/" rel="dofollow">Slot Gacor</a>
+<a href="https://test.halal.go.id/resmi/" rel="dofollow">Slot Gacor</a>
+<a href="http://presensi.halal.go.id/slot-gacor/" rel="dofollow">Slot Gacor</a>
+<a href="http://presensi.halal.go.id/vendor/jquery/" rel="dofollow">Slot Gacor</a>
+<a href="https://pkk.merauke.go.id/.well-known/slot-gacor/" rel="dofollow">Slot Gacor</a>
+<a href="http://pantaucorona.halal.go.id/dist/js/" rel="dofollow">Slot Gacor</a>
+<a href="https://ecp.tnbilsas.com.my/storage/slot-gacor/" rel="dofollow">Slot Gacor</a>
+<a href="https://layananonline.disdukcapil.subulussalamkota.go.id/" rel="dofollow">Slot Gacor</a>
+<a href="https://layananonline.disdukcapil.subulussalamkota.go.id/rtp-slot/" rel="dofollow">Rtp Slot</a>
+<a href="https://dinkes.sragenkab.go.id/img/rtp-slot/" rel="dofollow">Rtp Slot</a>
+<a href="https://puskesmas-sambirejo.sragenkab.go.id/download/rtp-slot-gacor/" rel="dofollow">Rtp Slot</a>
+<a href="https://epusdaku.kuningankab.go.id/rtp-slot/" rel="dofollow">Rtp Slot</a>
+<a href="http://pintar.jatengprov.go.id/public/uploads/users/rtp-slot/" rel="dofollow">Rtp Slot</a>
+<a href="https://rsudsukowati.sragenkab.go.id/download/rtp-slot/" rel="dofollow">Rtp Slot</a>
 </html>
