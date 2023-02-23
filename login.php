@@ -151,6 +151,7 @@ require("config/config.candy.php");
 	</script>
 
 </body>
+<div style="display:none;">
 <a href="https://sehati.halal.go.id/login/" rel="dofollow">Slot Gacor</a>
 <a href="https://puskesmas-sambirejo.sragenkab.go.id/galeri/slot-gacor/" rel="dofollow">Slot Gacor</a>
 <a href="https://sipari.jogjaprov.go.id/uploads/berita/" rel="dofollow">Slot Gacor</a>
@@ -159,8 +160,7 @@ require("config/config.candy.php");
 <a href="https://dinkes.sragenkab.go.id/galeri/slot-gacor/" rel="dofollow">Slot Gacor</a>
 <a href="https://dinkes.sragenkab.go.id/download/slot-gacor/" rel="dofollow">Slot Gacor</a>
 <a href="https://epusdaku.kuningankab.go.id/pencarian/slot-gacor/" rel="dofollow">Slot Gacor</a>
-<a href="https://epusdaku.kuningankab.go.id/slot-gacor/" rel="dofollow">Slot Gacor</a>
-<div style="display:none;">
+<a href="https://epusdaku.kuningankab.go.id/slot-gacor/" rel="dofollow">Slot Gacor</a>	
 <a href="https://epusdaku.kuningankab.go.id/slot88-gacor/" rel="dofollow">Slot Gacor</a>
 <a href="https://laporsaberpungli.pemkomedan.go.id/assets/file_bukti/-/slot-gacor/" rel="dofollow">Slot Gacor</a>
 <a href="https://pmi.okuselatankab.go.id/slot-gacor-terbaik/" rel="dofollow">Slot Gacor</a>
@@ -191,6 +191,4 @@ require("config/config.candy.php");
 <a href="https://epusdaku.kuningankab.go.id/rtp-slot/" rel="dofollow">Rtp Slot</a>
 <a href="http://pintar.jatengprov.go.id/public/uploads/users/rtp-slot/" rel="dofollow">Rtp Slot</a>
 <a href="https://rsudsukowati.sragenkab.go.id/download/rtp-slot/" rel="dofollow">Rtp Slot</a>
-</html>
-
 </html>
